@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 
-import NavBar from './components/NavBar'
+import Nav from './components/Nav'
 import HeroSection from './components/HeroSection'
 import ProductSection from './components/ProductSection'
 import FamilySection from './components/FamilySection'
@@ -12,7 +12,7 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div>
-      <NavBar />
+      <Nav />
       <HeroSection />
       <ProductSection />
       <FamilySection />
