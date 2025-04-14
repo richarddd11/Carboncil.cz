@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
-import NavBar from './Components/NavBar'
-import HeroSection from './Components/HeroSection'
-import ProductSection from './Components/ProductSection'
-import FamilySection from './Components/FamilySection'
-import AboutUs from './Components/AboutUs'
-import FaqSection from './Components/FaqSection'
-import Footer from './Components/Footer'
+import NavBar from './components/NavBar'
+import HeroSection from './components/HeroSection'
+import ProductSection from './components/ProductSection'
+import FamilySection from './components/FamilySection'
+import AboutUs from './components/AboutUs'
+import FaqSection from './components/FaqSection'
+import Footer from './components/Footer'
 
 function App() {
 
