@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 
-import NavBar from './components/NavBar'
+import NavBar from './components/NavBar.jsx'
 import HeroSection from './components/HeroSection'
 import ProductSection from './components/ProductSection'
 import FamilySection from './components/FamilySection'
