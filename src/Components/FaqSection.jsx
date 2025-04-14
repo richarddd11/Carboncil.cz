@@ -8,28 +8,28 @@ const FaqSection = () => {
           question: 'Proč zrovna z Venezuely?',
           answer:
             'Venezuela má jedinečné podmienky, kde vzniká drevo s vysokou hustotou. Uhlie je tak mimoriadne výhrevné a čisto prírodné.',
-          bgImage: "/FaqBg.png", // každý FAQ item má inú fotku
+          bgImage: "FaqBg.png", // každý FAQ item má inú fotku
         },
         {
           id: 2,
           question: 'Hoří Carboncil příliš rychle?',
           answer:
             'Naopak. I když se rozžhaví rychle, jeho výdrž je dlouhá a žár stabilní. To znamená, že si užijete dlouhé grilování bez nutnosti přikládání.',
-          bgImage: "/FaqBg.png",
+          bgImage: "FaqBg.png",
         },
         {
           id: 3,
           question: 'Kde si mohu Carboncil koupit?',
           answer:
             'Carboncil je dostupný v našem e-shopu a také v síti vybraných specializovaných prodejen.',
-          bgImage: "/FaqBg.png",
+          bgImage: "FaqBg.png",
         },
         {
           id: 4,
           question: 'Můžu používat Carboncil na balkoně?',
           answer:
             'Díky minimální kouřivosti je Carboncil ideální i do menších prostor, včetně balkonů. Přesto vždy dodržujte bezpečnostní předpisy.',
-          bgImage: "/FaqBg.png",
+          bgImage: "FaqBg.png",
         },
       ];
 
@@ -40,20 +40,20 @@ const FaqSection = () => {
       }
 
   return (
-    <section className="faq py-15 mx-auto max-w-410 text-white bg-black rounded-t-3xl" >
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+    <section className="faq py-15  mx-auto max-w-410 text-white bg-black rounded-t-3xl" >
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         
         {/* Ľavý stĺpec: FAQ položky */}
-        <div className="space-y-4">
+        <div className="space-y-4 lg:w-full md:w-2/3 mx-5 md:mx-auto">
           {faqData.map((item) => {
             const isOpen = openFaqId === item.id;
             return (
               <div
                 key={item.id}
-                className="rounded-lg p-4 relative bg-no-repeat bg-cover bg-center"
+                className={`rounded-lg p-4 relative bg-no-repeat bg-cover bg-center ${isOpen ? 'pt-10' : ''}`}
                 style={{
                   backgroundImage: isOpen
-                    ? `url('/openFaqBg.png')` // Otvorený stav - červená fotka
+                    ? `url('openFaqBg.png')` // Otvorený stav - červená fotka
                     : `url('${item.bgImage}')`   // Zatvorený stav - pôvodná fotka
                 }}
               >
@@ -67,9 +67,10 @@ const FaqSection = () => {
                 >
 
                   {/* Ikona +/-, ktorá má vždy čierne pozadie a biely text */}
-                  <span className="text-white w-8 h-9 text-2xl font-thin flex items-center justify-center rounded absolute right-5/110 top-1/250 mt-2">
-                    {isOpen ? '-' : '+'}
-                  </span>
+                  <span className="text-white w-8 h-9 text-2xl font-thin flex items-center justify-center rounded absolute right-5/110 top-1/250 mt-2 transform -translate-x-1/35 -translate-y-1/100">
+  {isOpen ? '-' : '+'}
+</span>
+
                 </button>
 
                 {/* Odpoveď sa zobrazí, len ak je isOpen === true */}

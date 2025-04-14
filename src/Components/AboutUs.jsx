@@ -8,7 +8,7 @@ const AboutUs = () => {
          </div>
       
       <div className=" bg-cover bg-center bg-no-repeat mx-auto mt-20 mb-15 px-6 p-23 rounded-xl"
-      style={{ backgroundImage: "url('/Subtract.png')" }}>
+      style={{ backgroundImage: "url('Subtract.png')" }}>
 
       <p className="mb-4">
         Za značkou Carboncil.cz stojí tým nadšenců do kvalitního a 

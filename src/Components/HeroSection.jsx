@@ -30,17 +30,17 @@ const HeroSection = () => {
           </div>
 
           {/* Benefity */}
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-            <div className='w-1/2'>
-              <img src="/Tree.png" alt="Ikona strom" className="mx-auto h-8 mb-2" />
+          <div className="benefits mt-12 grid grid-cols-2 sm:grid-cols-3 gap-6 text-center">
+          <div className="flex flex-col items-center">
+              <img src="Tree.png" alt="Ikona strom" className="h-8 mb-2" />
               <p className="text-sm font-medium">100 % přírodní</p>
             </div>
-            <div className='w-1/2'>
-              <img src="/smoke.png" alt="Ikona bez kouře" className="mx-auto h-8 mb-2" />
+            <div className="flex flex-col items-center">
+              <img src="smoke.png" alt="Ikona bez kouře" className="h-8 mb-2" />
               <p className="text-sm font-medium">Bez kouře, bez zápachu</p>
             </div>
-            <div className='w-30'>
-              <img src="/balcony.png" alt="Ikona balkón" className="mx-auto h-8 mb-2" />
+            <div className="flex flex-col items-center">
+              <img src="balcony.png" alt="Ikona balkón" className="h-8 mb-2" />
               <p className="text-sm font-medium">Vhodné i na balkonové grily</p>
             </div>
           </div>
@@ -49,20 +49,21 @@ const HeroSection = () => {
         {/* RIGHT - Obrázok uhlia + značky */}
         <div className="relative w-full max-w-[550px] mx-auto">
           <img
-            src="/MaskGroup.png"
+            src="MaskGroup.png"
             alt="Uhlie"
             className="w-full clip-arrow object-cover rounded-2xl"
           />
 
           {/* Červený štítok */}
           <div className="absolute top-0 h-2/9 w-133/550 left-0 bg-red-700 text-white font-semibold  py-10  rounded-xl shadow-md">
-            <img className='w-110/125 absolute left-1/12 top-48/125' src="/HeroLogo.png" alt="" />
+            <img className='w-110/125 absolute left-1/12 top-48/125' src="HeroLogo.png" alt="" />
           </div>
 
           {/* Čierna šípka */}
-          <div className="absolute bottom-0 right-0 h-2/9 w-133/550  pl-9 bg-black text-white text-xl p-3 rounded-xl shadow-md">
-            <a href='#' className='absolute left-55/125 bottom-45/125'>↗</a>
-          </div>
+          <div className="absolute bottom-0 right-0 h-2/9 w-133/550 bg-black text-white text-xl p-3 rounded-xl shadow-md flex items-center justify-center">
+  <a href="#">↗</a>
+</div>
+
         </div>
       </div>
     </section>

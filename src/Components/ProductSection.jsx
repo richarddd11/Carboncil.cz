@@ -11,7 +11,7 @@ const ProductSection = () => {
             
             <div className="relative bg-[#111111] p-6 flex flex-col">
             <img
-              src="/carboncil.png"
+              src="carboncil.png"
               alt="Carboncil 1,5kg"
               className="w-100 mb-4 rounded-lg object-contain"
             />
@@ -33,7 +33,7 @@ const ProductSection = () => {
 
             <div className="relative bg-[#111111] p-6 flex flex-col">
             <img
-              src="/carbonito.png"
+              src="carbonito.png"
               alt="Carbonito 3kg"
               className="w-100 mb-4 rounded-lg object-contain"
             />
@@ -53,7 +53,7 @@ const ProductSection = () => {
 
             <div className="relative bg-[#111111] p-6 flex flex-col">
             <img
-              src="/topQuality.png"
+              src="topQuality.png"
               alt="Top Quality 10kg"
               className="w-100 mb-4 rounded-lg object-contain"
             />
