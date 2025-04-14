@@ -1,8 +1,7 @@
 import React from 'react'
 import './App.css'
 
-import NavBar from './components/PLACEHOLDER_DO_NOT_USE'
-
+import NavBar from './components/NavBar'
 import HeroSection from './components/HeroSection'
 import ProductSection from './components/ProductSection'
 import FamilySection from './components/FamilySection'
