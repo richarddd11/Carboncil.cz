@@ -1,26 +1,15 @@
-import React from 'react'
-import './App.css'
-
-import NavBar from '@components/NavBar.jsx'
-import HeroSection from '@components/HeroSection'
-import ProductSection from '@components/ProductSection'
-import FamilySection from '@components/FamilySection'
-import AboutUs from '@components/AboutUs'
-import FaqSection from '@components/FaqSection'
-import Footer from '@components/Footer'
+import { useState } from 'react';
+import Login from './components/Login'; // cesta podľa projektu
+import ProtectedApp from './ProtectedApp'; // zvyšok tvojej stránky
 
 function App() {
-  return (
-    <div>
-      <NavBar />
-      <HeroSection />
-      <ProductSection />
-      <FamilySection />
-      <AboutUs />
-      <FaqSection />
-      <Footer />
-    </div>
-  )
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  return isLoggedIn ? (
+    <ProtectedApp />
+  ) : (
+    <Login onLogin={() => setIsLoggedIn(true)} />
+  );
 }
 
-export default App
+export default App;
