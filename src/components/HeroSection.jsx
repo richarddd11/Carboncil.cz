@@ -8,19 +8,19 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         {/* LEFT - Textová časť */}
         <div>
-          <h1 className="text-4xl w-full md:text-5xl font-bold text-black leading-tight">
+          <h1 className="text-4xl w-full max-[768px]:text-center md:text-5xl font-bold text-black leading-tight">
             Revoluční uhlí z Venezuely.<br />
             <span className="text-[#A40C0B] redSpan">Rožhaví se za 60 sekund.</span>
           </h1>
 
-          <p className="text-[#696969] mt-6 max-w-md">
+          <p className="text-[#696969] mt-6 max-w-md max-[768px]:mx-auto">
             Už žádné složité zapalování, špinavé ruce a dým, který vám kazí chuť
             k jídlu. Carboncil je 100% přírodní grilovací uhlí, ať už na zahradě,
             balkoně nebo v profesionální kuchyni.
           </p>
 
           {/* Buttons */}
-          <div className="flex gap-4 mt-8">
+          <div className="flex max-[768px]:justify-center gap-4 mt-8">
             <button className="bg-black text-white px-10 py-3 rounded-full flex items-center gap-2 hover:bg-gray-800 transition">
               Produkty <span className="text-xs">↗</span>
             </button>
