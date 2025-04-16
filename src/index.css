@@ -43,4 +43,220 @@
        @apply font-[Inter]
     }
 
+    @media (min-width: 510px) and (max-width: 640px) {
+      /* Pre otvorené FAQ položky (s triedou open-faq) zmenšíme background-size */
+      .open-faq {
+        background-size: 100%;
+        margin: 0;
+        padding: 14px;
+        margin-bottom: 8px;
+      }
+
+      .faq-toggle-open {
+        top: 12%;
+        right: 2%;
+        transform: translateX(-20%);
+      }
+    
+      .faq-toggle-closed {
+        top: 30%;
+        right: 3%;
+        transform: translateX(-3%);
+      }
+
+      .ques {
+        font-size: 17px;
+      }
+
+      .answer {
+        font-size: 15px;
+      }
+      
+      .container {
+        width: 95%;
+      }
+    }
+    
+    @media (min-width: 540px) {
+      .faq-toggle-open {
+        top: 11%;
+        right: 2%;
+        transform: translateX(-24%);
+      }
+    
+      .faq-toggle-closed {
+        top: 30%;
+        right: 3%;
+        transform: translateX(-7%);
+      }
+    }
+
+    @media (min-width: 600px) {
+      .faq-toggle-open {
+        top: 11%;
+        right: 3%;
+        transform: translateX(-15%);
+      }
+    
+      .faq-toggle-closed {
+        top: 30%;
+        right: 3%;
+        transform: translateX(-13%);
+      }
+
+      .open-faq {
+        padding-top: 28px;
+      }
+    }
+
+    @media (min-width: 640px) {
+      .faq-toggle-open {
+        top: 12%;
+        right: 3%;
+        transform: translateX(-24%);
+      }
+    
+      .faq-toggle-closed {
+        top: 30%;
+        right: 4%;
+        transform: translateX(-1%);
+      }
+
+      .open-faq {
+        padding-top: 35px;
+      }
+
+    }
+
+    @media ((min-width: 510px) and (max-width: 768px)) {
+      .container {
+        width: 95%;
+        margin: 0 auto;
+      }
+    }
+
+    @media (min-width: 700px) {
+      .faq-toggle-open {
+        top: 10%;
+        right: 4%;
+        transform: translateX(-12%);
+      }
+    
+      .faq-toggle-closed {
+        top: 30%;
+        right: 4%;
+        transform: translateX(-1%);
+      }
+
+      .open-faq {
+        padding-top: 45px;
+      }
+
+    }
+
+    @media (min-width: 768px) {
+      .faq-toggle-open {
+        top: 18%;
+        right: 3%;
+        transform: translateX(-20%);
+      }
+    
+      .faq-toggle-closed {
+        top: 30%;
+        right: 4%;
+        transform: translateX(-1%);
+      }
+    }
+
+      @media (min-width: 811px) {
+        .faq-toggle-open {
+          top: 17%;
+          right: 4%;
+          transform: translateX(-5%);
+        }
+      
+        .faq-toggle-closed {
+          top: 30%;
+          right: 4%;
+          transform: translateX(-3%);
+        }
+    }
+
+    @media (min-width: 900px) {
+      .faq-toggle-open {
+        top: 13%;
+        right: 4%;
+        transform: translateX(-8%);
+      }
+
+      .faq-toggle-closed {
+        top: 30%;
+        right: 4%;
+        transform: translateX(-10%);
+      }
+  }
+
+  @media (min-width: 1024px) {
+    .faq-toggle-open {
+      top: 13%;
+      right: 4%;
+      transform: translateX(-15%);
+    }
+
+    .faq-toggle-closed {
+      top: 30%;
+      right: 4%;
+      transform: translateX(-14%);
+    }
+
+    .open-faq {
+      margin-bottom: 10px;
+    }
+}
+
+@media ((min-width: 1024px) and (max-width: 1135px)) {
+  .container {
+    width: 70%;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1135px) {
+  .faq-toggle-open {
+    top: 19%;
+    right: 3%;
+    transform: translateX(-13%);
+  }
+
+  .faq-toggle-closed {
+    top: 30%;
+    right: 3%;
+    transform: translateX(-12%);
+  }
+}
+
+@media (min-width: 1360px) {
+  .faq-toggle-open {
+    top: 19%;
+    right: 3%;
+    transform: translateX(-16%);
+  }
+
+  .faq-toggle-closed {
+    top: 30%;
+    right: 3%;
+    transform: translateX(-12%);
+  }
+}
+
+@media (max-width: 1134px) {
+  .text {
+    text-align: center;
+  }
+
+  .footerBtn {
+    margin: 0 auto;
+  }
+}
+
 }
