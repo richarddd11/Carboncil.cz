@@ -14,10 +14,7 @@ const NavBar = () => {
         <nav className="font-inter hidden min-[799px]:flex gap-6 text-sm font-medium text-black">
           <a href="#">Domov</a>
           <a href="#">O nás</a>
-          <a href="#">Carboncil</a>
-          <a href="#">Carbonito</a>
-          <a href="#">Top Quality</a>
-          <a href="#">Kontakt</a>
+          <a href="#">Uhlie</a>
         </nav>
 
         {/* Spoločný kontajner pre mobilné ovládacie prvky (hamburger, lupa, Kontakt) */}
@@ -28,10 +25,7 @@ const NavBar = () => {
               {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>
           </div>
-          {/* Lupa */}
-          <button className="p-2 rounded-full hover:bg-gray-100 transition">
-            <img src="Lupa.png" alt="search" className="w-7 h-7" />
-          </button>
+          
           {/* Kontakt – zobrazí sa v oboch zobrazeniach */}
           <button className="bg-black text-white text-sm px-8 py-2 rounded-full hover:bg-gray-800 transition">
             Kontakt
@@ -49,10 +43,7 @@ const NavBar = () => {
         <nav className="flex flex-col gap-4">
           <a href="#" onClick={() => setIsOpen(false)}>Domov</a>
           <a href="#" onClick={() => setIsOpen(false)}>O nás</a>
-          <a href="#" onClick={() => setIsOpen(false)}>Carboncil</a>
-          <a href="#" onClick={() => setIsOpen(false)}>Carbonito</a>
-          <a href="#" onClick={() => setIsOpen(false)}>Top Quality</a>
-          <a href="#" onClick={() => setIsOpen(false)}>Kontakt</a>
+          <a href="#" onClick={() => setIsOpen(false)}>Uhlie</a>
         </nav>
       </div>
     </div>

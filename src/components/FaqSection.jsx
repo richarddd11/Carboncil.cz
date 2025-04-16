@@ -40,7 +40,7 @@ const FaqSection = () => {
       }
 
   return (
-    <section className="faq py-15  mx-auto max-w-410 text-white bg-black rounded-t-3xl" >
+    <section className="faq py-10 mb-5 mx-auto w-[98%] text-white bg-black rounded-4xl" >
         <div className="max-w-6xl mx-auto grid grid-cols-1 min-[1135px]:grid-cols-2 gap-12">
         
         {/* Ľavý stĺpec: FAQ položky */}
@@ -106,6 +106,42 @@ const FaqSection = () => {
         </div>
 
         <div className='h-[2px] w-[80%] mx-auto bg-[#A40C0B] rounded-lg mt-20'></div>
+
+        <footer className='relative px-5  2xl:max-w-410 mb-10 pt-20  mx-auto bg-black rounded-b-4xl'>
+            
+        <div className="flex flex-col  justify-between md:flex-row  py-4 px-2 text-sm md:text-base">
+          
+            <div>
+                <p className='mb-2 text-center text-white'>Uhlí, které griluje chytře.</p>
+            </div>
+
+            <nav className="flex justify-center items-end float-right text-right text-sm md:text-base gap-10 mb-5 sm:mb-0">
+            <a href="#" className="text-white hover:text-gray-300 transition">
+              O nás
+            </a>
+            <a href="#" className="text-white hover:text-gray-300 transition">
+              Carboncil
+            </a>
+            <a href="#" className="text-white hover:text-gray-300 transition">
+              Kontakt
+            </a>
+            <a href="#" className="text-white hover:text-gray-300 transition">
+              Carbonito
+            </a>
+            <a href="#" className="text-white hover:text-gray-300 transition">
+              Top Quality
+            </a>
+          </nav>
+
+          </div>
+          <div className='flex flex-row justify-between'>
+                <img className='pl-2'  src="HeroLogo.png" alt="" />
+                <p className="text-gray-400">© 2025 Carboncil</p>
+          </div>
+
+
+          
+        </footer>
     </section>
   )
 }

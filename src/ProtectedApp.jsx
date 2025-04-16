@@ -15,7 +15,7 @@ const ProtectedApp = () => {
       <FamilySection />
       <AboutUs />
       <FaqSection />
-      <Footer />
+      
     </div>
   );
 };

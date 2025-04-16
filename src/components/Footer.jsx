@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='relative px-5 max-w-410 rounded-b-3xl py-30 mb-20 pt-38 mx-auto bg-no-repeat bg-cover bg-center' style={{ backgroundImage: "url('faqSecBg.png')" }}>
+    <footer className='px-5  2xl:max-w-410  h-90 mb-20 pt-20  mx-auto bg-black rounded-b-2xl'>
             
         <div className="flex flex-col justify-between sm:flex-row  py-4 px-2 text-sm md:text-base">
           
@@ -34,17 +34,8 @@ const Footer = () => {
                 <p className="text-gray-400">© 2025 Carboncil</p>
           </div>
 
-          <div className='flex flex-row absolute right-0 bottom-0'>
-            <div className='mr-2 p-2 text-white bg-black rounded-xl'>
-                <img src="Youtube.png" alt="" />
-            </div>
-            <div className='mr-2 p-2 text-white bg-black rounded-xl'>
-                <img src="Instagram.png" alt="" />
-            </div>
-            <div className='text-white bg-black p-2 rounded-xl'>
-                <img src="OBJECTS.png" alt="" />
-            </div>
-          </div>
+
+          
         </footer>
   )
 }

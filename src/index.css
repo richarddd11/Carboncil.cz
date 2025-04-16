@@ -257,6 +257,67 @@
   .footerBtn {
     margin: 0 auto;
   }
+
+  footer {
+    background-size: 100% auto;
+  }
 }
 
+@media (max-width: 1662px) {
+  footer {
+    background-size: 1720px auto;
+    background-position: right bottom;
+  }
+}
+
+.about-bg {
+  background-image: url('Subtract.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1023px) {
+  .about-bg {
+    background-image: url('AboutUsMob.png');
+    font-size: 15px;
+    width: 650px;
+  }
+
+  .about {
+    position: absolute;
+    left: 8px;
+    top: 15px;
+  }
+
+  .wrapper-btn {
+    bottom: 10px;
+  }
+
+  .about-btn {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+ @media (max-width: 680px) {
+  .about-bg {
+    width: 480px;
+    font-size: 13px;
+  }
+
+  .about {
+    top: 67px;
+    left: 3px;
+  }
+
+  .wrapper-btn {
+    bottom: 63px;
+  }
+
+  .about-btn {
+    width: 35px;
+    height: 35px;
+  }
+ }
 }
