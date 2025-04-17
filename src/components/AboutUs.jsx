@@ -25,7 +25,7 @@ const AboutUs = () => {
       </p>
       <div className='wrapper-btn absolute bottom-0 right-0'>
       <div className='about-btn bg-black w-14 h-14 rounded-lg relative'>
-        <button className='text-white absolute left-24/100 top-25/100'><img src="Arrow.png" alt="Arrow" /></button>
+        <button className='text-white flex items-center justify-center arrow absolute left-22/100 top-19/100'><img src="Arrow.png" alt="Arrow" /></button>
       </div>
       </div>
       </div>

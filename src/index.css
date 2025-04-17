@@ -133,12 +133,21 @@
         padding-top: 35px;
       }
 
+      .arrow {
+        left: 10px;
+        top: 11px;
+      }
+
     }
 
     @media ((min-width: 510px) and (max-width: 768px)) {
       .container {
         width: 95%;
         margin: 0 auto;
+      }
+
+      .arrow {
+        left: 5px;
       }
     }
 
@@ -218,6 +227,11 @@
 
     .open-faq {
       margin-bottom: 10px;
+    }
+
+    .arrow {
+      left: 14px;
+      top: 17px;
     }
 }
 
@@ -407,6 +421,12 @@
 
     footer nav {
       font-size: 8px;
+    }
+
+    .arrow {
+      position: absolute;
+      left: 0;
+      top: 2px;
     }
  }
 
