@@ -27,7 +27,7 @@ const ProductSection = () => {
               className="text-white bg-[#A40C0B] w-9 h-9 rounded-lg absolute bottom-0 right-0 flex items-center justify-center hover:bg-red-700 transition"
               aria-label="Detail produktu"
             >
-              <span className="text-xl">↗</span>
+              <span className="text-xl"><img src="Arrow.png" alt="Arrow" /></span>
             </button>
             </div>
 
@@ -47,7 +47,7 @@ const ProductSection = () => {
               className="text-white bg-[#A40C0B] w-9 h-9 rounded-lg absolute bottom-0 right-0 flex items-center justify-center hover:bg-red-700 transition"
               aria-label="Detail produktu"
             >
-              <span className="text-xl">↗</span>
+              <span className="text-xl"><img src="Arrow.png" alt="Arrow" /></span>
             </button>
             </div>
         </div>

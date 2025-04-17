@@ -21,8 +21,8 @@ const HeroSection = () => {
 
           {/* Buttons */}
           <div className="flex max-[768px]:justify-center gap-4 mt-8">
-            <button className="bg-black text-white px-10 py-3 rounded-full flex items-center gap-2 hover:bg-gray-800 transition">
-              Produkty <span className="text-xs">↗</span>
+            <button className="bg-black text-white px-8 py-3 rounded-full flex items-center gap-2 hover:bg-gray-800 transition">
+              Produkty <span><img src="Arrow.png" alt="" /></span>
             </button>
             <a href='#' className="underline px-6 py-3 rounded-full hover:bg-gray-100 transition">
               Kontakt
@@ -61,7 +61,7 @@ const HeroSection = () => {
 
           {/* Čierna šípka */}
           <div className="absolute bottom-0 right-0 h-2/9 w-133/550 bg-black text-white text-xl p-3 rounded-xl shadow-md flex items-center justify-center">
-  <a href="#">↗</a>
+  <a href="#"><img src="Arrow.png" alt="Arrow" className='w-7' /></a>
 </div>
 
         </div>

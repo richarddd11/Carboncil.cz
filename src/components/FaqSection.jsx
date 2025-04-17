@@ -99,8 +99,8 @@ const FaqSection = () => {
           <p className="mb-6 text-base md:text-lg text-[#696969] leading-relaxed">
           Díky speciálnímu procesu karbonizace dosahuje výjimečných vlastností, které ho staví vysoko nad klasické dřevěné uhlí
           </p>
-          <button className="bg-[#A40C0B] w-1/2 footerBtn hover:bg-red-700 transition text-white font-semibold  py-3 rounded-full text-base md:text-lg">
-            Carboncil ↗
+          <button className="flex items-center justify-center bg-[#A40C0B] w-1/2 footerBtn hover:bg-red-700 transition text-white font-semibold  py-3 rounded-full text-base md:text-lg">
+            Carboncil <span> <img src="Arrow.png" alt="Arrow" /></span> 
           </button>
             </div>
         </div>
