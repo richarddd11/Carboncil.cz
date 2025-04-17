@@ -6,8 +6,8 @@ const NavBar = () => {
 
   return (
     // Obalíme do relative, aby absolútne menu bolo pozicionované podľa tohto kontajnera
-    <div className="relative">
-      <div className="nav shadow-md mx-auto flex items-center justify-between px-6 py-4">
+    <div className="relative w-full">
+      <div className="nav  shadow-md mx-auto flex items-center justify-between px-6 py-4">
         <img className="lg:ml-10" src="Logo.png" alt="Carboncil" />
 
         {/* Desktop navigácia */}

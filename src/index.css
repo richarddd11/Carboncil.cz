@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 @layer Components {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
     .nav {
         @apply font-[Inter]
     }
@@ -64,7 +71,7 @@
         transform: translateX(-3%);
       }
 
-      .ques {
+      .ques-open {
         font-size: 17px;
       }
 
@@ -219,6 +226,18 @@
     width: 70%;
     padding: 0 40px;
   }
+
+  .faq-toggle-open {
+    top: 15%;
+    right: 3%;
+    transform: translateX(-23%);
+  }
+
+  .faq-toggle-closed {
+    top: 30%;
+    right: 3%;
+    transform: translateX(-22%);
+  }
 }
 
 @media (min-width: 1135px) {
@@ -319,5 +338,124 @@
     width: 35px;
     height: 35px;
   }
+}
+
+  @media (max-width: 500px) {
+    .about-bg {
+      width: 350px;
+      font-size: 9px;
+    }
+  
+    .about {
+      top: 70px;
+      left: 0;
+    }
+
+    .about-p {
+      font-size: 8px;
+    }
+  
+    .wrapper-btn {
+      bottom: 70px;
+    }
+  
+    .about-btn {
+      width: 25px;
+      height: 25px;
+    }
+
+    .faq-toggle-open {
+      top: 15%;
+      right: 1%;
+      transform: translateX(-12%);
+    }
+
+    .faq-toggle-closed {
+      top: 30%;
+      right: 1%;
+      transform: translateX(-12%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 5px;
+    }
+
+    .closed-faq {
+      background-size: 100%;
+    }
+
+    .container {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .ques-open {
+      font-size: 16px;
+      margin-left: 10px;  
+    }
+
+    .answer {
+      font-size: 12px;
+      margin-left: 10px;
+      width: 90%;
+    }
+
+    .ques-closed {
+      font-size: 18px;
+    }
+
+    footer nav {
+      font-size: 8px;
+    }
+ }
+
+ @media ((min-width: 400px) and (max-width: 440px)) {
+  .faq-toggle-open {
+    top: 9%;
+    right: 1%;
+    transform: translateX(-18%);
+  }
+
+  .faq-toggle-closed {
+    top: 30%;
+    right: 1%;
+    transform: translateX(-17%);
+  }
+
+  .open-faq {
+    background-size: 100%;
+    padding: 10px;
+  }
+
+  .answer {
+    font-size: 13px;
+    margin-left: 10px;
+    width: 100%;
+  }
+ }
+  @media ((min-width: 375px) and (max-width: 390px)) {
+    .faq-toggle-open {
+      top: 17%;
+      right: 1%;
+      transform: translateX(-15%);
+    }
+  
+    .faq-toggle-closed {
+      top: 30%;
+      right: 1%;
+      transform: translateX(-11%);
+    }
+  
+    .open-faq {
+      background-size: 100%;
+      padding: 10px;
+    }
+  
+    .answer {
+      font-size: 13px;
+      margin-left: 10px;
+      width: 95%;
+    }
  }
 }

@@ -50,7 +50,7 @@ const FaqSection = () => {
             return (
               <div
                 key={item.id}
-                className={`faq rounded-lg p-4 relative bg-no-repeat bg-cover bg-center ${isOpen ? 'pt-13 open-faq' : ''}`}
+                className={`faq rounded-lg p-4 relative bg-no-repeat bg-cover bg-center ${isOpen ? 'pt-13 open-faq' : 'closed-faq'}`}
                 style={{
                   backgroundImage: isOpen
                     ? `url('openFaqBg.png')` // Otvorený stav - červená fotka
@@ -58,7 +58,7 @@ const FaqSection = () => {
                 }}
               >
                   {/* Otázka */}
-                  <span className={`text-xl ${isOpen ? 'text-white ques' : 'text-black'}`}>
+                  <span className={`text-xl ${isOpen ? 'text-white ques-open' : 'text-black ques-closed'}`}>
                     {item.question}
                   </span>
                   <button
@@ -79,7 +79,7 @@ const FaqSection = () => {
                     isOpen ? "max-h-96 opacity-100 mt-3" : "max-h-0 opacity-0"
                   }`}
                 >
-                  <p className={`text-lg md:text-lg leading-relaxed text-white ${isOpen ? 'answer' : ''}`}>
+                  <p className={`text-lg md:text-lg  text-white ${isOpen ? 'answer' : ''}`}>
                     {item.answer}
                   </p>
                 </div>
