@@ -5,17 +5,12 @@ import FamilySection from './components/FamilySection';
 import AboutUs from './components/AboutUs';
 import FaqSection from './components/FaqSection';
 import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
 
 const ProtectedApp = () => {
   return (
     <div>
-      <NavBar />
-      <HeroSection />
-      <ProductSection />
-      <FamilySection />
-      <AboutUs />
-      <FaqSection />
-      
+      <HomePage />
     </div>
   );
 };

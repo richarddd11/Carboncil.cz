@@ -31,7 +31,7 @@ const ProductSection = () => {
             </button>
             </div>
 
-            <div className="relative bg-[#111111] p-6 flex flex-col">
+            <div className="relative  p-6 flex flex-col">
             <img
               src="topQuality.png"
               alt="Top Quality 10kg"
