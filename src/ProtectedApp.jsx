@@ -1,18 +1,21 @@
+import React from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import HeroSection from './components/HeroSection';
-import ProductSection from './components/ProductSection';
-import FamilySection from './components/FamilySection';
-import AboutUs from './components/AboutUs';
-import FaqSection from './components/FaqSection';
-import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ProductPage from './pages/ProductPage';
+import ContactPage from './pages/ContactPage';
 
-const ProtectedApp = () => {
-  return (
-    <div>
-      <HomePage />
-    </div>
-  );
-};
+const ProtectedApp = () => (
+  <>
+    <NavBar />
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/o-nas" element={<AboutPage />} />
+      <Route path="/uhlie" element={<ProductPage />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
+  </>
+);
 
 export default ProtectedApp;

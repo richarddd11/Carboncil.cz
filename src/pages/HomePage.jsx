@@ -10,9 +10,8 @@ import NavBar from '../components/NavBar';
 const HomePage = () => {
   return (
     <>
-    <NavBar />
     <HeroSection />
-    <ProductSection />
+    <ProductSection showDetailButton={true} />
     <FamilySection />
     <AboutUs />
     <FaqSection />

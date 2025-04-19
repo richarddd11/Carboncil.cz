@@ -24,9 +24,11 @@ const AboutUs = () => {
         kteří chtějí čistotu, kvalitu a pohodu.
       </p>
       <div className='wrapper-btn absolute bottom-0 right-0'>
-      <div className='about-btn bg-black w-14 h-14 rounded-lg relative'>
-        <button className='text-white flex items-center justify-center arrow absolute left-22/100 top-19/100'><img src="Arrow.png" alt="Arrow" /></button>
-      </div>
+      <div className="about-btn bg-black w-14 h-14 rounded-lg relative">
+  <button className="absolute inset-0 flex items-center justify-center">
+    <img src="Arrow.png" alt="Arrow" />
+  </button>
+</div>
       </div>
       </div>
       

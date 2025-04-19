@@ -1,49 +1,63 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Spoločná logika pre výber tried podľa toho, či je link aktívny
+  const linkClass = ({ isActive }) =>
+    `text-sm font-medium transition ${
+      isActive ? 'text-[#A40C0B]' : 'text-black'
+    }`;
+
   return (
-    // Obalíme do relative, aby absolútne menu bolo pozicionované podľa tohto kontajnera
     <div className="relative w-full">
-      <div className="nav  shadow-md mx-auto flex items-center justify-between px-6 py-4">
-        <img className="lg:ml-10" src="Logo.png" alt="Carboncil" />
+      <div className="nav shadow-md w-full max-w-8xl mx-auto flex items-center justify-between px-6 py-4">
+        <NavLink to="/" className="flex-shrink-0">
+          <img src="Logo.png" alt="Carboncil" className="h-8" />
+        </NavLink>
 
         {/* Desktop navigácia */}
-        <nav className="font-inter hidden min-[799px]:flex gap-6 text-sm font-medium text-black">
-          <a href="#">Domov</a>
-          <a href="#">O nás</a>
-          <a href="#">Uhlie</a>
+        <nav className="hidden min-[799px]:flex gap-6">
+          <NavLink to="/" end className={linkClass}>Domov</NavLink>
+          <NavLink to="/o-nas" className={linkClass}>O nás</NavLink>
+          <NavLink to="/uhlie" className={linkClass}>Uhlie</NavLink>
         </nav>
 
-        {/* Spoločný kontajner pre mobilné ovládacie prvky (hamburger, lupa, Kontakt) */}
-        <div className="flex items-center gap-4 lg:mr-15">
-          {/* Hamburger – zobrazený iba na mobilnom zobrazení */}
-          <div className="min-[799px]:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="p-2 focus:outline-none">
-              {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-            </button>
-          </div>
-          
-          {/* Kontakt – zobrazí sa v oboch zobrazeniach */}
-          <button className="bg-black text-white text-sm px-8 py-2 rounded-full hover:bg-gray-800 transition">
-            Kontakt
+        {/* Mobilné ovládanie + Kontakt */}
+        <div className="flex items-center gap-4">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="min-[799px]:hidden p-2 focus:outline-none"
+          >
+            {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
+          <NavLink to="/kontakt" className="bg-black text-white text-sm px-6 py-2 rounded-full hover:bg-gray-800 transition">
+            Kontakt
+          </NavLink>
         </div>
       </div>
 
-      {/* Mobilné menu – absolútne poziciované, centrované a s vysokým z-indexom */}
-      {/* Menu je stále renderované a jeho viditeľnosť sa mení pomocou tried */}
+      {/* Mobilné menu */}
       <div
-        className={`absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-center py-4 transition-all duration-300 transform overflow-hidden md:hidden ${
-          isOpen ? 'max-h-96 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2'
-        }`}
+        className={`
+          absolute z-50 top-full left-0 w-full bg-white shadow-md
+          flex flex-col items-center py-4
+          transition-all duration-300 transform overflow-hidden md:hidden
+          ${isOpen ? 'max-h-96 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2'}
+        `}
       >
         <nav className="flex flex-col gap-4">
-          <a href="#" onClick={() => setIsOpen(false)}>Domov</a>
-          <a href="#" onClick={() => setIsOpen(false)}>O nás</a>
-          <a href="#" onClick={() => setIsOpen(false)}>Uhlie</a>
+          <NavLink to="/" end onClick={() => setIsOpen(false)} className={linkClass}>
+            Domov
+          </NavLink>
+          <NavLink to="/o-nas" onClick={() => setIsOpen(false)} className={linkClass}>
+            O nás
+          </NavLink>
+          <NavLink to="/uhlie" onClick={() => setIsOpen(false)} className={linkClass}>
+            Uhlie
+          </NavLink>
         </nav>
       </div>
     </div>
