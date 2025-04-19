@@ -10,17 +10,6 @@ import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
 
 const HomePage = () => {
-
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    // Iba na úvodnej stránke bez lomítka na konci
-    if (location.pathname === '/Carboncil.cz') {
-      navigate('/Carboncil.cz/', { replace: true });
-    }
-  }, [location, navigate]);
-
   return (
     <>
     <HeroSection />
