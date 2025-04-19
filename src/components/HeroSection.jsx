@@ -32,7 +32,7 @@ const HeroSection = () => {
           {/* Benefity */}
           <div className="benefits mt-12 grid grid-cols-2 sm:grid-cols-3 gap-6 text-center">
           <div className="flex flex-col items-center">
-              <img src="Tree.png" alt="Ikona strom" className="h-8 mb-2" />
+              <img src="/Tree.png" alt="Ikona strom" className="h-8 mb-2" />
               <p className="text-sm font-medium">100 % přírodní</p>
             </div>
             <div className="flex flex-col items-center">
