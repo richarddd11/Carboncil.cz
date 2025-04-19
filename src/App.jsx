@@ -11,16 +11,15 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const fullPath = location.pathname + location.search + location.hash;
-  
-    if (
-      !location.pathname.endsWith('/') &&
-      !location.pathname.includes('.') &&
-      !location.pathname.includes('/login')
-    ) {
-      navigate(fullPath + '/', { replace: true });
-    }    
+    const { pathname, search, hash } = location;
+    const endsWithSlash = pathname.endsWith('/');
+
+    if (!endsWithSlash && !pathname.includes('.')) {
+      navigate(`${pathname}/${search}${hash}`, { replace: true });
+    }
   }, [location, navigate]);
+
+
   return isLoggedIn ? (
     <ProtectedApp />
   ) : (
