@@ -11,19 +11,15 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const path = location.pathname;
-    const search = location.search;
-    const hash = location.hash;
-
-    // Ak chýba lomítko na konci a nie sme na base route ako /login
+    const fullPath = location.pathname + location.search + location.hash;
+  
     if (
-      path !== '/' &&
-      !path.endsWith('/') &&
-      !path.includes('.') && // ignoruj napr. /súbor.css
-      !path.includes('/login') // nepridávať lomítko na špeciálne routy, ak treba
+      !location.pathname.endsWith('/') &&
+      !location.pathname.includes('.') &&
+      !location.pathname.includes('/login')
     ) {
-      navigate(`${path}/${search}${hash}`, { replace: true });
-    }
+      navigate(fullPath + '/', { replace: true });
+    }    
   }, [location, navigate]);
   return isLoggedIn ? (
     <ProtectedApp />
