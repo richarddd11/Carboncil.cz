@@ -6,7 +6,7 @@ const CharcoalVariantsSection = () => {
       {/* Family obrazok hore */}
       <div className="relative w-screen left-1/2 -translate-x-1/2">
         <img
-          src="/ProductPage/Family.png"
+          src="Family1.png"
           alt="Rodina pri grilovaní"
           className="w-full object-cover"
         />
@@ -22,7 +22,7 @@ const CharcoalVariantsSection = () => {
           </p>
           <div className="w-[80px]">
             <img
-              src="/ProductPage/L.png"
+              src="L.png"
               alt="L veľkosť"
               className="w-full h-auto"
             />
@@ -53,7 +53,7 @@ const CharcoalVariantsSection = () => {
           </p>
           <div className="w-[100px]">
             <img
-              src="/ProductPage/XXL.png"
+              src="XXL.png"
               alt="XXL veľkosť"
               className="w-full h-auto"
             />

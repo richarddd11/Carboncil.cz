@@ -16,7 +16,7 @@ const BiolihSection = () => {
         {/* Obrázok vpravo */}
         <div className="flex justify-center">
           <img
-            src="/ProductPage/Biolih1.png"
+            src="Biolih1.png"
             alt="Uhlie"
             className="max-w-full h-auto object-contain"
           />
@@ -39,12 +39,12 @@ const BiolihSection = () => {
         <div className="relative h-[0px]">
     <div className="absolute right-4 md:right-12 bottom-[-100px] md:bottom-[-140px] z-30 w-[260px] md:w-[320px]">
       <img
-        src="/ProductPage/CoalBg.png"
+        src="CoalBg.png"
         alt="Pozadie kruh"
         className="w-full h-auto object-contain"
       />
       <img
-        src="/ProductPage/carboncilCoal.png"
+        src="carboncilCoal.png"
         alt="Balenie uhlia"
         className="absolute top-1/2 left-1/2 w-[80%] -translate-x-1/2 -translate-y-1/2"
       />

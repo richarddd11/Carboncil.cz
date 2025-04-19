@@ -4,7 +4,7 @@ const features = [
     {
       title: 'Přírodní udržitelnost',
       text: `Naše uhlí pochází z Venezuely, země s bohatými lesními zdroji, kde se těží v souladu s přísnými principy udržitelnosti. Využíváme výhradně dřevěný odpad z certifikovaných zdrojů, který by jinak zůstal nevyužitý.`,
-      image: '/ProductPage/Coal1.png',
+      image: 'Coal1.png',
       alt: 'Uhlí a venezuelská vlajka',
       showFlag: true,
       desktopTextFirst: true,
@@ -12,7 +12,7 @@ const features = [
     {
       title: 'Žádná chemie',
       text: `Každý kus uhlí Carboncil je vyroben bez použití ropných derivátů, chemických podpalovačů nebo jiných syntetických látek. Výsledkem je čistý přírodní produkt, který hoří rovnoměrně, produkuje minimum kouře a nezanechává v jídle nepříjemný zápach.`,
-      image: '/ProductPage/Coal2.png',
+      image: 'Coal2.png',
       alt: 'Čisté uhlí',
       showFlag: false,
       desktopTextFirst: false,
@@ -20,7 +20,7 @@ const features = [
     {
       title: 'Okamžité zapálení',
       text: `Jedinečnou výhodou Carboncilu je jeho samozápalná schopnost. Díky přírodnímu biolihu je příprava grilu jednodušší než kdy dřív – bez nutnosti použít podpalovač, papír nebo sirky. Stačí škrtout a oheň je na světě.`,
-      image: '/ProductPage/Coal3.png',
+      image: 'Coal3.png',
       alt: 'Zápalné uhlí',
       showFlag: false,
       desktopTextFirst: true,
@@ -54,7 +54,7 @@ const CharcoalInfoSection = () => {
               />
               {item.showFlag && (
                 <img
-                  src="/ProductPage/Flag.png"
+                  src="Flag.png"
                   alt="Venezuelská vlajka"
                   className="absolute top-2 right-2 w-[64px] h-auto max-w-none"
                 />
