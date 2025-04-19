@@ -10,5 +10,5 @@ export default defineConfig({
       '@components': path.resolve(__dirname, 'src/components')
     }
   },
-  base: './',
+  base: '/Carboncil.cz/',
 })
