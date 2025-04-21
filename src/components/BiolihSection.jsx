@@ -6,6 +6,13 @@ const BiolihSection = () => {
       {/* 1. Sekcia: uhlie + biolih */}
       <div className="grid  md:grid-cols-2 items-center gap-12">
         {/* Text vľavo */}
+        <div className="flex justify-center">
+          <img
+            src="Biolih1.png"
+            alt="Uhlie"
+            className="max-w-full h-auto object-contain"
+          />
+        </div>
         <div>
           <h2 className="text-2xl font-bold text-red-700 mb-4">Biolih</h2>
           <p className="text-gray-700 text-base leading-relaxed">
@@ -14,17 +21,10 @@ const BiolihSection = () => {
         </div>
 
         {/* Obrázok vpravo */}
-        <div className="flex justify-center">
-          <img
-            src="Biolih1.png"
-            alt="Uhlie"
-            className="max-w-full h-auto object-contain"
-          />
-        </div>
       </div>
 
       {/* 2. Sekcia: uhlí které dává smysl + uhlie na bielom pozadí */}
-      <div className="relative z-10 grid md:grid-cols-2 items-center gap-12">
+      <div className="relative z-10 mb-10 grid md:grid-cols-2 items-center gap-12">
         {/* Text vľavo */}
         <div>
           <h2 className="text-2xl font-bold text-red-700 mb-4">Uhlí, které dává smysl</h2>
@@ -36,20 +36,7 @@ const BiolihSection = () => {
           </p>
         </div>
 
-        <div className="relative h-[0px]">
-    <div className="absolute right-4 md:right-12 bottom-[-100px] md:bottom-[-140px] z-30 w-[260px] md:w-[320px]">
-      <img
-        src="CoalBg.png"
-        alt="Pozadie kruh"
-        className="w-full h-auto object-contain"
-      />
-      <img
-        src="carboncilCoal.png"
-        alt="Balenie uhlia"
-        className="absolute top-1/2 left-1/2 w-[80%] -translate-x-1/2 -translate-y-1/2"
-      />
-    </div>
-  </div>
+        
 
       </div>
 

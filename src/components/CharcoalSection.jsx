@@ -71,7 +71,7 @@ const CharcoalInfoSection = () => {
       })}
 
       <div className='w-full mx-auto'>
-        <img src="/ProductPage/Coal4.png" alt="" />
+        <img src="Coal4.png" alt="" />
       </div>
 
       <div className="benefits mt-12 grid grid-cols-2 sm:grid-cols-3 gap-6 text-center">

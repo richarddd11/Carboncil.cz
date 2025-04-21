@@ -18,7 +18,7 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
             <img
               src="carboncil.png"
               alt="Carboncil 1,5kg"
-              className="w-100 mb-4 rounded-lg mx-auto object-contain"
+              className="w-90 mb-4 rounded-lg mx-auto object-contain"
             />
             {/* Názov a popis produktu */}
             <h3 className="text-2xl font-bold mb-2 ">Carboncil 1,5kg</h3>
@@ -42,7 +42,7 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
             <img
               src="topQuality.png"
               alt="Top Quality 10kg"
-              className="w-100 mb-4 rounded-lg mx-auto object-contain"
+              className="w-90 mb-4 rounded-lg mx-auto object-contain"
             />
             {/* Názov a popis produktu */}
             <h3 className="text-2xl font-bold mb-2">Top Quality 10kg</h3>

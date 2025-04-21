@@ -4,6 +4,7 @@ import ProductSection from '../components/ProductSection'
 import CharcoalInfoSection from '../components/CharcoalSection'
 import BiolihSection from '../components/BiolihSection'
 import CharcoalVariantsSection from '../components/CharcoalVariantsSection'
+import FaqSection from '../components/FaqSection';
 
 const ProductPage = () => {
   return (
@@ -12,6 +13,7 @@ const ProductPage = () => {
      <CharcoalInfoSection />
      <BiolihSection />
      <CharcoalVariantsSection />
+     <FaqSection customClass="w-[96%]" noTopRadius={true} />
     </div>
   )
 }
