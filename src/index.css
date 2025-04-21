@@ -42,7 +42,15 @@
     @apply font-[Inter]
   }
 
-  .faq h2 {
+  .productPage p, h3 {
+    @apply font-[Inter]
+  }
+
+  .productSec h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .faq, .productSec h2 {
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
 

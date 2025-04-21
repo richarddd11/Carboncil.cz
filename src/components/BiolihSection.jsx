@@ -14,8 +14,8 @@ const BiolihSection = () => {
           />
         </div>
         <div>
-          <h2 className="text-2xl font-bold text-red-700 mb-4">Biolih</h2>
-          <p className="text-gray-700 text-base leading-relaxed">
+          <h2 className="text-3xl font-extrabold text-[#A40C0B] mb-4">Biolih</h2>
+          <p className="text-[#696969] font-medium text-lg leading-relaxed">
             Unikátní samozápalný efekt umožňuje impregnace biolihu, který pochází z obnovitelných přírodních zdrojů. Nezanechává zápach, neuvolňuje škodlivé látky a zaručuje maximální pohodlí při zapalování. Díky tomu je Carboncil nejen efektivní, ale také bezpečný pro vaši rodinu i přírodu.
           </p>
         </div>
@@ -27,11 +27,11 @@ const BiolihSection = () => {
       <div className="relative z-10 mb-10 grid md:grid-cols-2 items-center gap-12">
         {/* Text vľavo */}
         <div>
-          <h2 className="text-2xl font-bold text-red-700 mb-4">Uhlí, které dává smysl</h2>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
+          <h2 className="text-3xl font-extrabold text-[#A40C0B] mb-4">Uhlí, které dává smysl</h2>
+          <p className="text-[#696969] font-medium text-lg leading-relaxed mb-4">
             Pokud hledáš způsob, jak si užít skvělé jídlo, přírodu a zároveň přispět k udržitelnějšímu světu, Carboncil je uhlí, které spojuje všechny tyto hodnoty v jednom balení.
           </p>
-          <p className="text-gray-700 text-base leading-relaxed">
+          <p className="text-[#696969] font-medium text-lg leading-relaxed">
             Carboncil rozsvítí tvé grilování novým způsobem, s respektem k přírodě, s jednoduchostí a bez kompromisů. Vyzkoušej rozdíl, který dává smysl.
           </p>
         </div>
