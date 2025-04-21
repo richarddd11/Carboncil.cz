@@ -2,14 +2,14 @@ import React from 'react'
 
 const AboutUs = () => {
   return (
-      <section className='relative max-w-5xl mx-auto' >
+      <section className='relative max-w-[1324px] mx-auto' >
     
-      <div className="about-bg relative bg-contain bg-center bg-no-repeat mx-auto mt-20 mb-15 px-6 p-23 rounded-xl">
+      <div className="about-bg relative bg-contain bg-center bg-no-repeat mx-auto  mt-20 mb-15 px-6 p-23 rounded-xl">
          <div className='about absolute left-1/130 top-1/27'>
               <p className="text-[#A40C0B] text-xs about-p">O nás</p>
          </div>
 
-      <p className="mb-4">
+      <p className="mb-4 about-text">
         Za značkou Carboncil.cz stojí tým nadšenců do kvalitního a 
         udržitelného grilování. Když jsme poprvé objevili uhlí Carboncil
         ve Venezuele, věděli jsme, že máme v rukou něco výjimečného. 
@@ -17,7 +17,7 @@ const AboutUs = () => {
         vyrobené čistě z přírody.
       </p>
       
-      <p className="mb-0 leading-relaxed">
+      <p className="mb-0 leading-relaxed about-text">
         Naším cílem je přinést do Česka novou generaci grilování. Takovou, 
         kde se nemusíte hádat se sousedy kvůli kouři, zapalovat uhlí půl 
         hodiny, nebo se bát, co vlastně dýcháte. Carboncil je uhlí pro lidi, 

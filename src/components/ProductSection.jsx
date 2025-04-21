@@ -12,7 +12,9 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
         </div>
       )}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8  mt-12 mx-7">
+<div className="flex justify-center">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 max-w-4xl w-full">
+
             
             <div className="relative  p-6 flex flex-col">
             <img
@@ -57,6 +59,7 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
               <span className="text-xl"><img src="Arrow.png" alt="Arrow" /></span>
             </button>
             )}
+            </div>
             </div>
         </div>
       </div>
