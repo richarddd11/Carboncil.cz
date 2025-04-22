@@ -1,16 +1,23 @@
-import React from 'react'
+import React from 'react';
 
 const Coal = () => {
   return (
-    <section className='mx-3 mt-10'>
+    <section className="mt-10 px-7">
+      <div className="w-full">
+        {/* Desktop verzia obrázka */}
+        <img
+          src="Coal4.png"
+          alt="Coal"
+          className="w-full max-w-none object-cover rounded-2xl hidden sm:block"
+        />
 
-        <div className="max-w-7xl mx-auto">
-  <img
-    src="Coal4.png"
-    alt="Coal"
-    className=''
-  />
-</div>
+        {/* Mobilná verzia obrázka */}
+        <img
+          src="Coal4bg.png"
+          alt="Coal mobile"
+          className="w-full max-w-none object-cover rounded-2xl sm:hidden"
+        />
+      </div>
 
       <div className="benefits max-w-4xl mx-auto mt-12 grid grid-cols-2 sm:grid-cols-3 gap-6 text-center">
         <div className="flex flex-col items-center">
@@ -27,7 +34,8 @@ const Coal = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Coal
+export default Coal;
+

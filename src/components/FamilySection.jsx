@@ -3,7 +3,7 @@ import React from 'react'
 const FamilySection = () => {
   return (
     <section className='family mt-20 mx-5'>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
                 <img src="Family.png" alt="Rodina pri grilovaní" className="rounded-xl w-full object-cover" />
             </div>

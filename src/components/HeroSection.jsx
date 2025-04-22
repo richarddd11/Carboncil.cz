@@ -37,11 +37,11 @@ const HeroSection = () => {
             </div>
             <div className="flex flex-col items-center">
               <img src="smoke.png" alt="Ikona bez kouře" className="h-8 mb-2" />
-              <p className="text-sm font-medium">Bez kouře, bez zápachu</p>
+              <p className="text-sm font-medium">Bez kouře</p>
             </div>
             <div className="flex flex-col items-center">
               <img src="balcony.png" alt="Ikona balkón" className="h-8 mb-2" />
-              <p className="text-sm font-medium">Vhodné i na balkonové grily</p>
+              <p className="text-sm font-medium">Vhodné na balkon</p>
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ const HeroSection = () => {
 
           {/* Čierna šípka */}
           <div className="absolute bottom-0 right-0 h-2/9 w-133/550 bg-black text-white text-xl p-3 rounded-xl shadow-md flex items-center justify-center">
-  <a href="#"><img src="Arrow.png" alt="Arrow" className='w-7' /></a>
+  <a href="#"><img src="Arrow1.png" alt="Arrow" className='w-16' /></a>
 </div>
 
         </div>

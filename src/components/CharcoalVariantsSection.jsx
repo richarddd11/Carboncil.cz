@@ -6,11 +6,15 @@ const CharcoalVariantsSection = () => {
       {/* Varianty uhlia + Family obrazok + Uhlie */}
       <div className="relative w-full">
         {/* Family background */}
-        <img
-          src="Family1.png"
-          alt="Rodina pri grilovaní"
-          className="w-full max-h-[500px] z-10 relative"
-        />
+        <picture>
+  <source media="(max-width: 768px)" srcSet="familyMobil.png" />
+  <img
+    src="Family1.png"
+    alt="Rodina pri grilovaní"
+    className="w-full h-[400px] md:h-auto max-h-[500px] object-cover aspect-[21/9] rounded-[35px] z-10 relative"
+  />
+</picture>
+
 
         {/* Uhlie s kruhom - musí byť neskôr v DOMe + z-30 */}
         <div className="hidden md:block absolute z-30 top-[-280px] right-2/8 translate-x-1/2 w-[320px] md:w-[400px] lg:w-[460px]">
@@ -27,7 +31,7 @@ const CharcoalVariantsSection = () => {
         </div>
 
         {/* Grid variantov uhlia */}
-<div className="relative z-10 max-w-6xl mx-auto px-6 pt-20 pb-20 grid md:grid-cols-2 gap-20">
+<div className="relative z-10 max-w-6xl mx-auto px-6 pt-20 pb-20 grid md:grid-cols-2 gap-30">
   {/* Ľavá strana – variant 1 */}
   <div className="flex flex-col justify-center space-y-4">
     <h3 className="text-2xl font-bold">Carboncil 1,5kg</h3>

@@ -6,7 +6,7 @@ const AboutUs = () => {
     
       <div className="about-bg relative bg-contain bg-center bg-no-repeat mx-auto  mt-20 mb-15 px-6 p-23 rounded-xl">
          <div className='about absolute left-1/130 top-1/27'>
-              <p className="text-[#A40C0B] text-xs about-p">O nás</p>
+              <p className="text-[#A40C0B] text-xs font-bold about-p">O nás</p>
          </div>
 
       <p className="mb-4 about-text">
