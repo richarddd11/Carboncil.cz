@@ -55,7 +55,7 @@ const ContactInfo = () => (
 
         {/* logo centered */}
         <div className="flex justify-center mb-6">
-          <img src="/HeroLogo.png" alt="Carboncil Logo" className="h-8" />
+          <img src="HeroLogo.png" alt="Carboncil Logo" className="h-8" />
         </div>
 
         {/* copyright bottom-right */}

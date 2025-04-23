@@ -22,7 +22,7 @@ const ContactHeroForm = () => {
             className="w-1/2 inline-flex text-lg justify-start items-center gap-3 bg-[#A40C0B] text-white rounded-full py-1 hover:bg-red-800 transition"
           >
             <span className="bg-white rounded-full w-[42px] h-[42px] flex items-center justify-center ml-1">
-              <img src="/Mobile.png" alt="Telefon" className="w-5 h-5" />
+              <img src="Mobile.png" alt="Telefon" className="w-5 h-5" />
             </span>
             +421 915 633 064
           </a>
@@ -31,7 +31,7 @@ const ContactHeroForm = () => {
             className="w-1/2  inline-flex text-lg justify-start items-center gap-3 bg-[#A40C0B] text-white rounded-full py-1 hover:bg-red-800 transition"
           >
             <span className="bg-white rounded-full w-[42px] h-[42px] flex items-center justify-center ml-1">
-              <img src="/Mail.png" alt="Email" className="w-[22px] h-[18px]" />
+              <img src="Mail.png" alt="Email" className="w-[22px] h-[18px]" />
             </span>
             info@carboncil.com
           </a>
