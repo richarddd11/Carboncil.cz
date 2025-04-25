@@ -6,9 +6,9 @@ const AboutUs = () => {
     <section className="relative mx-auto my-12 px-6 max-w-[1324px]">
       <div className="relative w-full">
         <picture>
-          <source media="(max-width:600px)" srcSet="/AboutMob.png" />
+          <source media="(max-width:600px)" srcSet="AboutMob.png" />
           <img
-            src="/Subtract.png"
+            src="Subtract.png"
             alt="O nás pozadie"
             className="w-full h-auto rounded-xl object-cover"
           />
