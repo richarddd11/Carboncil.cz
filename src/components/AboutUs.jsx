@@ -44,7 +44,7 @@ const AboutUs = () => {
             className="w-full h-full bg-black flex items-center justify-center rounded-lg shadow-md hover:bg-gray-800 transition"
             aria-label="Viac o nás"
           >
-            <img src="/Arrow1.png" alt=">" className="w-10 h-10" />
+            <img src="Arrow1.png" alt=">" className="w-10 h-10" />
           </button>
         </div>
       </div>
