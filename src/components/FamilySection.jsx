@@ -2,18 +2,18 @@ import React from 'react'
 
 const FamilySection = () => {
   return (
-    <section className='family mt-20 mx-5'>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <section className='family mt-20 mx-8 md:mx-5'>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-16 items-center">
             <div>
                 <img src="Family.png" alt="Rodina pri grilovaní" className="rounded-xl w-full object-cover" />
             </div>
 
             <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-[#A40C0B] mb-4">
+                <h2 className="text-2xl md:text-4xl font-bold text-[#A40C0B] mb-2 md:mb-4">
                 Jedno balení, celá grilovačka!
                 </h2>
 
-                <p className="text-[#696969] text-lg font-medium leading-relaxed">
+                <p className="text-[#696969] w-[90%] md:w-full text-lg font-medium leading-5 md:leading-relaxed">
             S 1,5kg balením Carboncilu pohodlně pohostíte 5 až 6 hladových grilovačů. 
             Rychle se rozžhaví, hoří dlouho a bez kouře, takže se můžete 
             soustředit jen na chuť a společnost.

@@ -36,7 +36,7 @@ const ContactInfo = () => (
 
       {/* ABSOLUTE RED LINE OVER THE IMAGE */}
       <div
-        className="absolute left-0 w-full h-[2px] bg-red-700 z-10"
+        className="absolute z-30 left-0 w-full h-[2px] bg-red-700 z-10"
         style={{ top: '80%' }}
       />
     </div>

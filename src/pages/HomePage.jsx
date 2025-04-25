@@ -1,24 +1,29 @@
-import React from 'react'
-import { useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
-import HeroSection from '../components/HeroSection';
+// src/pages/HomePage.jsx
+import React from 'react';
+import { useMediaQuery } from 'react-responsive';
+
+import HeroDesktop from '../components/HeroDesktop';
+import HeroMobile from '../components/HeroMobile';
 import ProductSection from '../components/ProductSection';
-import FaqSection from '../components/FaqSection';
 import FamilySection from '../components/FamilySection';
 import AboutUs from '../components/AboutUs';
+import FaqSection from '../components/FaqSection';
 import Footer from '../components/Footer';
-import NavBar from '../components/NavBar';
 
 const HomePage = () => {
+  // true quand ≤ 767px → mobile
+  const isMobile = useMediaQuery({ maxWidth: 550 });
+
   return (
     <>
-    <HeroSection />
-    <ProductSection showDetailButton={true} />
-    <FamilySection />
-    <AboutUs />
-    <FaqSection />
-  </>
-  )
-}
+      {isMobile ? <HeroMobile /> : <HeroDesktop />}
 
-export default HomePage
+      <ProductSection showDetailButton />
+      <FamilySection />
+      <AboutUs />
+      <FaqSection />
+    </>
+  );
+};
+
+export default HomePage;
