@@ -41,7 +41,7 @@ const HeroMobile = () => (
     <div className="grid grid-cols-3 gap-4 text-center pt-12 mb-10">
       <div className="flex flex-col items-center">
         <img src="smoke.png" alt="Bez kouře" className="h-8 mb-5" />
-        <p className="text-sm font-medium">Bez kouře, bez zápachu</p>
+        <p className="text-sm font-medium">Bez kouře</p>
       </div>
       <div className="flex flex-col items-center">
         <img src="Tree.png" alt="Přírodní" className="h-8 mb-5" />

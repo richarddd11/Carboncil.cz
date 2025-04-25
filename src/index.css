@@ -524,7 +524,7 @@
     }
 
     .buttons button {
-      padding: 7px 15px;
+      padding: 7px 13px;
     }
 
     .buttons a {
@@ -538,7 +538,7 @@
     }
     
     .buttons button {
-      padding: 7px 28px;
+      padding: 7px 24px;
     }
     
     .buttons a {
@@ -596,6 +596,36 @@
     .about-btn img {
       width: 23px;
       height: 23px;
+    }
+  }
+
+  @media (min-width: 375px) {
+    .product-text {
+      font-size: 10px;
+    }
+
+    .product-h3 {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 415px) {
+    .product-text {
+      font-size: 12px;
+    }
+
+    .product-h3 {
+      font-size: 21px;
+    }
+  }
+
+  @media (min-width: 460px) {
+    .product-text {
+      font-size: 14px;
+    }
+
+    .product-h3 {
+      font-size: 23px;
     }
   }
 
@@ -680,7 +710,7 @@
 
     @media (min-width: 500px) and (max-width: 600px) {
       .about-text {
-        font-size: 21px;
+        font-size: 19px;
       }
   
       .text-div {
@@ -693,8 +723,8 @@
       }
   
       .about-btn {
-        width: 55px !important;
-        height: 55px !important;
+        width: 50px !important;
+        height: 50px !important;
       }
   
       .about-btn img {
@@ -704,6 +734,14 @@
 
       .about-us {
         font-size: 16px;
+      }
+
+      .product-text {
+        font-size: 15px;
+      }
+  
+      .product-h3 {
+        font-size: 23px;
       }
     }
 
@@ -734,6 +772,23 @@
       .about-us {
         font-size: 18px;
       }
+
+      .product-text {
+        font-size: 13px;
+      }
+  
+      .product-h3 {
+        font-size: 20px;
+      }
+    }
+
+    @media (min-width: 550px) and (max-width: 660px) {
+
+      .product {
+        width: 75%;
+        margin: 0 auto;
+        height: auto;
+      }
     }
  
   @media (min-width: 600px) {
@@ -754,6 +809,32 @@
       width: 23px;
       height: 23px;
     }
+
+    .product-text {
+      font-size: 15px;
+    }
+
+    .product-h3 {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 660px) and (max-width: 767px) {
+    .product {
+      width: 65%;
+      margin: 0 auto;
+      height: auto;
+    }
+  }
+
+  @media (min-width: 660px)  {
+    .product-text {
+      font-size: 14px;
+    }
+
+    .product-h3 {
+      font-size: 21px;
+    }
   }
 
   @media (min-width: 710px) {
@@ -763,6 +844,54 @@
 
     .about-us {
       font-size: 10px;
+    }
+
+    .product-text {
+      font-size: 16px;
+    }
+
+    .product-h3 {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1010px) {
+    .product-text {
+      font-size: 11px;
+    }
+
+    .product-h3 {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 820px) and (max-width: 1010px) {
+    .product-text {
+      font-size: 12px;
+    }
+
+    .product-h3 {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 880px) and (max-width: 1010px) {
+    .product-text {
+      font-size: 14px;
+    }
+
+    .product-h3 {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 950px) and (max-width: 1010px) {
+    .product-text {
+      font-size: 16px;
+    }
+
+    .product-h3 {
+      font-size: 23px;
     }
   }
   
