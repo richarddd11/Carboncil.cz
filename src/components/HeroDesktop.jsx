@@ -8,9 +8,9 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         {/* LEFT - Textová časť */}
         <div>
-          <h1 className="text-4xl w-full max-[768px]:text-center md:text-5xl font-bold text-black leading-tight">
+          <h1 className="text-4xl w-full max-[768px]:text-center md:text-[47px] font-bold text-black leading-tight">
             Revoluční uhlí z Venezuely.<br />
-            <span className="text-[#A40C0B] redSpan">Rožhaví se za 60 sekund.</span>
+            <span className="text-[#A40C0B] redSpan font-extrabold">Rožhaví se za 60 sekund.</span>
           </h1>
 
           <p className="text-[#696969] mt-6 max-w-md max-[768px]:mx-auto">

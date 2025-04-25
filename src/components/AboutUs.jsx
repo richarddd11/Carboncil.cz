@@ -1,39 +1,55 @@
-import React from 'react'
+// src/components/AboutUs.jsx
+import React from 'react';
 
 const AboutUs = () => {
   return (
-      <section className='relative max-w-[1324px] mx-auto' >
-    
-      <div className="about-bg relative bg-contain bg-center bg-no-repeat mx-auto mt-12 mb-12 px-6 p-23 rounded-xl">
-         <div className='about absolute left-1/130 top-1/27'>
-              <p className="text-[#A40C0B] text-xs font-bold about-p">O nás</p>
-         </div>
+    <section className="relative mx-auto my-12 px-6 max-w-[1324px]">
+      <div className="relative w-full">
+        <picture>
+          <source media="(max-width:600px)" srcSet="/AboutMob.png" />
+          <img
+            src="/Subtract.png"
+            alt="O nás pozadie"
+            className="w-full h-auto rounded-xl object-cover"
+          />
+        </picture>
 
-      <p className="mb-4 about-text">
-        Za značkou Carboncil.cz stojí tým nadšenců do kvalitního a 
-        udržitelného grilování. Když jsme poprvé objevili uhlí Carboncil
-        ve Venezuele, věděli jsme, že máme v rukou něco výjimečného. 
-        Uhlí, které se rozžhaví za minutu, nekouří, nepáchne a přitom je 
-        vyrobené čistě z přírody.
-      </p>
-      
-      <p className="mb-0 leading-relaxed about-text">
-        Naším cílem je přinést do Česka novou generaci grilování. Takovou, 
-        kde se nemusíte hádat se sousedy kvůli kouři, zapalovat uhlí půl 
-        hodiny, nebo se bát, co vlastně dýcháte. Carboncil je uhlí pro lidi, 
-        kteří chtějí čistotu, kvalitu a pohodu.
-      </p>
-      <div className='wrapper-btn absolute bottom-0 right-0'>
-      <div className="about-btn bg-black w-14 h-14 rounded-lg relative">
-  <button className="absolute inset-0 flex items-center justify-center">
-    <img src="Arrow.png" alt="Arrow" />
-  </button>
-</div>
-      </div>
-      </div>
-      
-  </section>
-  )
-}
+        {/* Tabka „O nás“ */}
+        <div
+          className="absolute font-bold text-[#A40C0B] about-us"
+          style={{ top: '4%', left: '1%' }}
+        >
+          O nás
+        </div>
 
-export default AboutUs
+        {/* Textový blok */}
+        <div
+          className="absolute text-black text-div"
+          style={{ top: '17%', left: '5%', right: '5%' }}
+        >
+          <p className="mb-7 text-2xl about-text about1 leading-relaxed">
+          Za značkou Carboncil.cz stojí tým nadšenců do kvalitního a udržitelného grilování. Když jsme poprvé objevili uhlí Carboncil ve Venezuele, věděli jsme, že máme v rukou něco výjimečného. Uhlí, které se rozžhaví za minutu, nekouří, nepáchne a přitom je vyrobené čistě z přírody.
+          </p>
+          <p className="text-2xl about-text leading-relaxed">
+          Naším cílem je přinést do Česka novou generaci grilování. Takovou, kde se nemusíte hádat se sousedy kvůli kouři, zapalovat uhlí půl hodiny, nebo se bát, co vlastně dýcháte. Carboncil je uhlí pro lidi, kteří chtějí víc čistotu, kvalitu a pohodu.
+          </p>
+        </div>
+
+        {/* Tlačidlo */}
+        <div
+          className="absolute about-btn"
+          style={{ bottom: '0%', right: '0%', width: '5%', height: '16%' }}
+        >
+          <button
+            className="w-full h-full bg-black flex items-center justify-center rounded-lg shadow-md hover:bg-gray-800 transition"
+            aria-label="Viac o nás"
+          >
+            <img src="/Arrow1.png" alt=">" className="w-10 h-10" />
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutUs;

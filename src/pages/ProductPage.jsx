@@ -9,7 +9,8 @@ import Coal from '../components/Coal'
 
 const ProductPage = () => {
   return (
-    <div className='mt-10 productPage'>
+    <div className='mt-30 productPage'>
+      
      <ProductSection showDetailButton={false} showHeading={false} />
      <CharcoalInfoSection />
      <Coal />

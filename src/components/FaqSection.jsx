@@ -74,7 +74,7 @@ const FaqSection = ({ customClass = "w-[98%]", noTopRadius = false }) => {
                     })}
                 </div>
 
-                <div className="text flex flex-col justify-center">
+                <div className="text flex flex-col justify-center mx-5">
                     <h2 className="text-3xl md:text-4xl font-semibold mb-4">Prečo je Carboncil revolučné uhlie?</h2>
                     <p className="mb-6 text-base md:text-lg text-[#696969] leading-relaxed">
                         Carboncil je unikátní uhlí vyrobené z čisté biomasy, bez jakýchkoli chemikálií, bez zápachu a bez kouře.
@@ -90,17 +90,17 @@ const FaqSection = ({ customClass = "w-[98%]", noTopRadius = false }) => {
 
             <div className='h-[2px] w-[95%] mx-auto bg-[#A40C0B] rounded-lg mt-20'></div>
 
-            <footer className='relative px-5 2xl:max-w-410 mb-10 pt-20 mx-auto bg-black rounded-b-4xl'>
-                <div className="flex flex-col justify-between md:flex-row py-4 px-2 text-sm md:text-base">
+            <footer className=' relative px-5 2xl:max-w-410 mb-10 pt-20 mx-auto bg-black rounded-b-4xl'>
+                <div className="fot flex flex-col justify-between md:flex-row py-4 px-2 text-sm md:text-base">
                     <div>
-                        <p className='mb-2 text-center text-white'>Uhlí, které griluje chytře.</p>
+                        <p className='mb-2 text-center  text-white'>Uhlí, které griluje chytře.</p>
                     </div>
                     <nav className="flex justify-center items-end float-right text-right text-sm md:text-base gap-10 mb-5 sm:mb-0">
                         <a href="#" className="text-white hover:text-gray-300 transition">O nás</a>
                         <a href="#" className="text-white hover:text-gray-300 transition">Carboncil</a>
-                        <a href="#" className="text-white hover:text-gray-300 transition">Kontakt</a>
                         <a href="#" className="text-white hover:text-gray-300 transition">Carbonito</a>
-                        <a href="#" className="text-white hover:text-gray-300 transition">Top Quality</a>
+                        <a href="#" className="text-white hover:text-gray-300 transition">Top quality</a>
+                        <a href="#" className="text-white hover:text-gray-300 transition">Kontakt</a>
                     </nav>
                 </div>
                 <div className='flex flex-row justify-between'>

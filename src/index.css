@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
@@ -12,10 +12,11 @@
   }
 
   .nav {
-    @apply font-[Inter]
+    @apply font-[Inter];
   }
 
-  .hero span {
+  .hero span,
+  .hero h1 {
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
@@ -23,53 +24,75 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
-  .hero p, a, button {
-    @apply font-[Inter] font-medium
+  .hero p,
+  .hero a,
+  .hero button {
+    @apply font-[Inter] font-medium;
   }
 
   .productSection h2 {
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
-  .productSection p, h3 {
-    @apply font-[Inter]
+  .product h3 {
+    @apply font-[Inter];
+  }
+
+  .productSection p,
+  .productSection h3 {
+    @apply font-[Inter];
   }
 
   .family {
-    @apply font-[Inter]
+    @apply font-[Inter];
   }
 
-  .faq {
-    @apply font-[Inter]
+  .about-text {
+    @apply font-[Inter];
   }
 
-  .productPage p, h3 {
-    @apply font-[Inter]
+  .about-us {
+    @apply font-[Inter];
+  }
+
+  .faq span,
+  .faq p,
+  .faq button,
+  .faq nav,
+  .faq a {
+    @apply font-[Inter];
+  }
+
+  .productPage p,
+  .productPage h3 {
+    @apply font-[Inter];
   }
 
   .productSec h2 {
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
-  .faq, .productSec h2 {
+  .faq,
+  .productSec h2 {
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
-  .aboutPage h2, h3 {
+  .aboutPage h2,
+  .aboutPage h3 {
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
-  
+
   .aboutPage {
-    @apply font-[Inter]
-  }
-
-  footer {
-    @apply font-[Inter]
+    @apply font-[Inter];
   }
 
   .qoute {
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
+  }
+
+  .footer1 {
+    @apply font-[Inter];
   }
 
   @media (min-width: 440px) and (max-width: 640px) {
@@ -339,151 +362,6 @@
     }
   }
 
-  .about-bg {
-    background-image: url('/Subtract.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  @media (max-width: 1023px) {
-    .about-bg {
-      background-image: url('/AboutUsMob.png');
-      font-size: 15px;
-      width: 618px;
-    }
-
-    .about {
-      position: absolute;
-      left: 8px;
-      top: 25px;
-    }
-
-    .wrapper-btn {
-      bottom: 20px;
-    }
-
-    .about-btn {
-      width: 42px;
-      height: 42px;
-    }
-  }
-
-  @media (min-width: 1360px) {
-    .about-bg {
-      width: 100%;
-      max-width: 1324px;
-      background-image: url('/Subtract.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 420px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-    .about-bg .about-text {
-      max-width: 1268px;
-      height: 266px;
-      font-size: 23px;
-      line-height: 1.5;
-      margin-bottom: 32px;
-    }
-
-    .about-btn {
-      width: 70px;
-      height: 70px;
-    }
-
-    .about-p {
-      font-size: 16px;
-    }
-  }
-
-  @media (min-width: 1100px) and (max-width: 1360px) {
-    .about-bg {
-      width: 100%;
-      max-width: 1100px;
-      background-image: url('/Subtract.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 340px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    
-    .about-bg .about-text {
-      max-width: 1068px;
-      height: 216px;
-      font-size: 23px;
-      line-height: 1.5;
-    }
-
-    .about-btn {
-      width: 58px;
-      height: 58px;
-    }
-
-    .about-p {
-      font-size: 16px;
-    }
-  }
-
-  @media (min-width: 1023px) and (max-width: 1100px) { 
-    .about-bg {
-      width: 100%;
-      max-width: 1010px;
-      background-image: url('/Subtract.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 315px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    
-    .about-bg .about-text {
-      max-width: 1068px;
-      height: 216px;
-      font-size: 23px;
-      line-height: 1.5;
-    }
-
-    .about-btn {
-      width: 55px;
-      height: 55px;
-    }
-
-    .about-p {
-      font-size: 16px;
-    }
-  }
-
-  @media (max-width: 680px) {
-    .about-bg {
-      width: 480px;
-      font-size: 13px;
-    }
-
-    .about {
-      top: 67px;
-      left: 0;
-    }
-
-    .wrapper-btn {
-      bottom: 63px;
-    }
-
-    .about-btn {
-      width: 33px;
-      height: 33px;
-    }
-  }
-
   @media (min-width: 540px) and (max-width: 600px) {
     .faq-toggle-open {
       top: 10%;
@@ -504,28 +382,6 @@
   }
 
   @media (max-width: 500px) {
-    .about-bg {
-      width: 350px;
-      font-size: 9px;
-    }
-
-    .about {
-      top: 70px;
-      left: 0;
-    }
-
-    .about-p {
-      font-size: 8px;
-    }
-
-    .wrapper-btn {
-      bottom: 70px;
-    }
-
-    .about-btn {
-      width: 25px;
-      height: 25px;
-    }
 
     .faq-toggle-open {
       top: 15%;
@@ -654,6 +510,8 @@
     .buttons a {
        padding: 5px;
     }
+
+    
   }
 
   @media (min-width: 420px) {
@@ -713,44 +571,224 @@
   }
 
   @media (min-width: 375px) and (max-width: 500px) {
-    .about-bg {
-      position: relative;      /* aby sa absolútne deti merali voči tomuto boxu */
-      background-image: url('/AboutMob.png');
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      max-width: 300px;
-      padding: 35px;
+    .about-text {
+      font-size: 14px;
     }
+
+    .text-div {
+      top: 60px !important;
+    }
+
+    .about-us {
+      font-size: 12px;
+      top: 5px !important;
+    }
+
+    .about-btn {
+      width: 38px !important;
+      height: 38px !important;
+    }
+
+    .about-btn img {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  @media (min-width: 400px) and (max-width: 500px) {
+    .about-text {
+      font-size: 16px;
+    }
+
+    .text-div {
+      top: 50px !important;
+    }
+
+    .about-us {
+      font-size: 12px;
+      top: 5px !important;
+    }
+
+    .about-btn {
+      width: 41px !important;
+      height: 41px !important;
+    }
+
+    .about-btn img {
+      width: 23px;
+      height: 23px;
+      }
+    }
+
+    @media (min-width: 430px) and (max-width: 500px) {
+      .about-text {
+        font-size: 17px;
+      }
   
-    /* Tabka „O nás“ */
-    .about {
-      position: absolute;      
-      top: 7px;                 /* 5% z výšky .about-bg */
-      left: 6px;                /* 8% z šírky .about-bg */
+      .text-div {
+        top: 70px !important;
+      }
+  
+      .about-us {
+        font-size: 12px;
+        top: 5px !important;
+      }
+  
+      .about-btn {
+        width: 45px !important;
+        height: 45px !important;
+      }
+  
+      .about-btn img {
+        width: 23px;
+        height: 23px;
+      }
     }
-    
-    .about p {
-      font-weight: 700;
-      font-size: 11px;
+
+    @media (min-width: 460px) and (max-width: 600px) {
+      .about-text {
+        font-size: 19px;
+      }
+  
+      .text-div {
+        top: 60px !important;
+      }
+  
+      .about-us {
+        font-size: 12px;
+        top: 5px !important;
+      }
+  
+      .about-btn {
+        width: 45px !important;
+        height: 45px !important;
+      }
+  
+      .about-btn img {
+        width: 23px;
+        height: 23px;
+      }
+
+      .about-us {
+        font-size: 15px;
+      }
     }
-    
-    /* Celý textový blok */
+
+    @media (min-width: 500px) and (max-width: 600px) {
+      .about-text {
+        font-size: 21px;
+      }
+  
+      .text-div {
+        top: 70px !important;
+      }
+  
+      .about-us {
+        font-size: 12px;
+        top: 5px !important;
+      }
+  
+      .about-btn {
+        width: 55px !important;
+        height: 55px !important;
+      }
+  
+      .about-btn img {
+        width: 35px;
+        height: 35px;
+      }
+
+      .about-us {
+        font-size: 16px;
+      }
+    }
+
+    @media (min-width: 550px) and (max-width: 599px) {
+      .about-text {
+        font-size: 23px;
+      }
+  
+      .text-div {
+        top: 70px !important;
+      }
+  
+      .about-us {
+        font-size: 12px;
+        top: 5px !important;
+      }
+  
+      .about-btn {
+        width: 56px !important;
+        height: 56px !important;
+      }
+  
+      .about-btn img {
+        width: 35px;
+        height: 35px;
+      }
+
+      .about-us {
+        font-size: 18px;
+      }
+    }
+ 
+  @media (min-width: 600px) {
+    .about-text {
+      font-size: 10px;
+    }
+
+    .about-us {
+      font-size: 8px;
+    }
+
+    .about-btn {
+      width: 30px;
+      height: 30px;
+    }
+
+    .about-btn img {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  @media (min-width: 710px) {
     .about-text {
       font-size: 13px;
     }
-  
-    /* Tlačidlo */
-    .wrapper-btn {
-      position: absolute;
-      bottom: 0;              /* 5% z výšky kontajnera */
-      right: 0px;               /* 8% z šírky kontajnera */
-    }
-    .about-btn {
-      width: 35px;
-      height: 35px;
+
+    .about-us {
+      font-size: 10px;
     }
   }
   
+  @media (min-width: 860px) {
+    .about-text {
+      font-size: 16px;
+    }
 
+    .about-us {
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 1010px) {
+    .about-text {
+      font-size: 20px;
+    }
+
+    .about-us {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .about-text {
+      font-size: 25px;
+    }
+
+    .about-us {
+      font-size: 14px;
+    }
+  }
 }

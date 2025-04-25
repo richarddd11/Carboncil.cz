@@ -2,13 +2,13 @@ import React from 'react';
 
 const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
   return (
-    <section className="productSection bg-black text-white py-16 mx-8 rounded-4xl px-6">
+    <section className="productSection bg-black text-white py-10 mx-8 rounded-4xl px-6">
       <div className="max-w-8xl pl-5 bg-black">
 
         {showHeading && (
-          <div className="text-center mb-12">
-            <h2 className="text-5xl text-[#A40C0B] font-bold mb-2">Objevte rozdíl</h2>
-            <h3 className="text-white text-5xl">Tady začíná vaše čisté grilování.</h3>
+          <div className="text-center mb-3">
+            <h2 className="text-4xl md:text-5xl text-[#A40C0B] font-bold mb-2">Objevte rozdíl</h2>
+            <h3 className="text-white text-4xl md:text-5xl font-medium">Tady začíná vaše čisté grilování.</h3>
           </div>
         )}
 
@@ -23,7 +23,7 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
                 alt="pozadie produktu"
                 className="absolute inset-0 w-full h-full object-cover rounded-lg"
               />
-              <div className="relative p-6 flex flex-col">
+              <div className="relative product p-6 flex flex-col">
                 <img
                   src="carboncil.png"
                   alt="Carboncil 1,5kg"
@@ -47,7 +47,7 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
             </div>
 
             {/* Druhý produkt */}
-            <div className="relative flex flex-col items-start">
+            <div className="relative product flex flex-col items-start">
               {/* Pozadie podľa designu */}
               <img
                 src="ProductBg.png"

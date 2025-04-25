@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HeroMobile = () => (
-  <div className="md:hidden heroMobile bg-white px-6 py-5">
+  <div className="md:hidden heroMobile hero bg-white px-6 py-5 mt-20">
     {/* Nadpis */}
     <h1 className="text-3xl font-bold text-black leading-tight">
       Revoluční uhlí z Venezuely.<br />
@@ -38,7 +38,7 @@ const HeroMobile = () => (
     </div>
 
     {/* Benefity */}
-    <div className="grid grid-cols-3 gap-4 text-center pt-12">
+    <div className="grid grid-cols-3 gap-4 text-center pt-12 mb-10">
       <div className="flex flex-col items-center">
         <img src="smoke.png" alt="Bez kouře" className="h-8 mb-5" />
         <p className="text-sm font-medium">Bez kouře, bez zápachu</p>

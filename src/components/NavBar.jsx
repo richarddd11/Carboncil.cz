@@ -12,7 +12,7 @@ const NavBar = () => {
     }`;
 
   return (
-    <div className="relative w-full">
+    <div className="fixed top-0 bg-white z-50 w-full">
       <div className="nav shadow-md w-full max-w-8xl mx-auto flex items-center justify-between px-6 py-4">
         <NavLink to="/" className="flex-shrink-0">
           <img src="Logo.png" alt="Carboncil" className="h-8" />
