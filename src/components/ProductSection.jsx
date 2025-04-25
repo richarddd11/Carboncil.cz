@@ -16,7 +16,7 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 max-w-4xl w-full">
 
             {/* První produkt */}
-            <div className="relative flex flex-col items-start">
+            <div className="relative flex flex-col py-3 items-start">
               {/* Pozadie podľa designu */}
               <img
                 src="ProductBg.png"
@@ -27,38 +27,36 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
                 <img
                   src="carboncil.png"
                   alt="Carboncil 1,5kg"
-                  className="w-90 mb-4 rounded-lg mx-auto object-contain"
+                  className="w-90 mb-4 rounded-xl mx-auto object-contain"
                 />
                 <h3 className="text-2xl font-bold mb-2">Carboncil 1,5kg</h3>
                 <p className="text-base text-[#696969] mb-4">
-                  Kompaktní balení ekologického uhlí vhodné pro menší grily
-                  nebo jednorázové akce. Jeho vysoká výhřevnost zaručí stabilní
-                  teplotu po dostatečně dlouhou dobu.
+                Kompaktní balení ekologického uhlí vhodné pro menší grilování nebo jako vzorek pro ty, kteří chtějí Carboncil poprvé vyzkoušet.
                 </p>
                 {showDetailButton && (
                   <button
-                    className="text-white bg-[#A40C0B] w-9 h-9 rounded-lg absolute bottom-0 right-0 flex items-center justify-center hover:bg-red-700 transition"
+                    className="text-white bg-[#A40C0B] w-12 h-12 rounded-lg absolute bottom-[-12px] right-0 flex items-center justify-center hover:bg-red-700 transition"
                     aria-label="Detail produktu"
                   >
-                    <img src="Arrow.png" alt="Arrow" />
+                    <img src="Arrow1.png" alt="Arrow" className='w-10' />
                   </button>
                 )}
               </div>
             </div>
 
             {/* Druhý produkt */}
-            <div className="relative product flex flex-col items-start">
+            <div className="relative  flex flex-col py-3 items-start">
               {/* Pozadie podľa designu */}
               <img
                 src="ProductBg.png"
                 alt="pozadie produktu"
                 className="absolute inset-0 w-full h-full object-cover rounded-lg"
               />
-              <div className="relative p-6 flex flex-col">
+              <div className="relative product p-6 flex flex-col">
                 <img
                   src="topQuality.png"
                   alt="Top Quality 10kg"
-                  className="w-90 mb-4 rounded-lg mx-auto object-contain"
+                  className="w-90 mb-4 rounded-xl mx-auto object-contain"
                 />
                 <h3 className="text-2xl font-bold mb-2">Top Quality 10kg</h3>
                 <p className="text-base text-[#696969] mb-4">
@@ -67,10 +65,10 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
                 </p>
                 {showDetailButton && (
                   <button
-                    className="text-white bg-[#A40C0B] w-9 h-9 rounded-lg absolute bottom-0 right-0 flex items-center justify-center hover:bg-red-700 transition"
+                    className="text-white bg-[#A40C0B] w-12 h-12 rounded-lg absolute bottom-[-12px] right-0 flex items-center justify-center hover:bg-red-700 transition"
                     aria-label="Detail produktu"
                   >
-                    <img src="Arrow.png" alt="Arrow" />
+                    <img src="Arrow1.png" alt="Arrow" className='w-10' />
                   </button>
                 )}
               </div>
