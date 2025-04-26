@@ -10,7 +10,7 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
             <h2 className="text-4xl md:text-5xl text-[#A40C0B] font-bold mb-2">
               Objevte rozdíl
             </h2>
-            <h3 className="text-white text-4xl md:text-5xl font-medium">
+            <h3 className="text-white productHead text-4xl md:text-5xl font-medium">
               Tady začíná vaše čisté grilování.
             </h3>
           </div>

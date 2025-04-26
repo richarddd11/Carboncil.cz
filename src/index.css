@@ -385,6 +385,16 @@
     }
   }
 
+  @media (min-width: 600px) {
+    .biolih p {
+      font-size: 20px;
+    }
+  
+    .biolih h2 {
+      font-size: 30px;
+    }
+  }
+
   @media (max-width: 500px) {
 
     .faq-toggle-open {
@@ -599,17 +609,85 @@
     }
   }
 
-  @media (min-width: 375px) {
-    .product-text {
-      font-size: 10.5px;
+  @media (min-width: 375px) and (max-width: 700px) {
+    .productSec p, h2 {
+      width: 95%;
     }
 
+    .charcoal-pr {
+      margin: 10px;
+    }
+
+    .coal {
+      padding: 0;
+    }
+
+    .coal-img {
+      border-radius: 0;
+      width: 100%;
+    }
+
+    .coal .benefits {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 40px 15px;
+      padding: 10px;
+    }
+
+    .coal .benefits img {
+      margin-bottom: 30px;
+      height: 42px;
+    }
+
+  }
+  
+  @media (min-width: 375px) {
+    .product-text {
+      font-size: 10px;
+    }
+    
     .product-h3 {
       font-size: 18px;
       margin-bottom: 5px;
     }
+  }
+
+  @media (min-width: 375px) and (max-width: 400px) {
+    .biolih p {
+      font-size: 13px;
+    }
+  
+    .biolih h2 {
+      font-size: 27px;
+    }
+    .biolih {
+      padding: 20px;
+    }
+
+    .coal .benefits {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 40px 15px;
+      padding: 10px;
+    }
+
+    .coal .benefits img {
+      margin-bottom: 30px;
+      height: 36px;
+    }
+
+    .coal .benefits p {
+      font-size: 13px;
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 385px) {
+    .productHead {
+      font-size: 34px;
+    }
 
   }
+
 
   @media (min-width: 385px) {
     .product-text {
@@ -631,6 +709,16 @@
     .product-h3 {
       font-size: 19px;
       
+    }
+  }
+
+  @media (min-width: 400px) and (max-width: 500px) {
+    .biolih p {
+      font-size: 14px;
+    }
+  
+    .biolih h2 {
+      font-size: 27px;
     }
   }
 
@@ -827,6 +915,14 @@
   
       .product-h3 {
         font-size: 25px;
+      }
+
+      .biolih p {
+        font-size: 16px;
+      }
+    
+      .biolih h2 {
+        font-size: 29px;
       }
     }
 

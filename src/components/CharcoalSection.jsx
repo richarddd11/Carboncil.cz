@@ -42,7 +42,7 @@ const CharcoalInfoSection = () => {
         return (
           <div
             key={index}
-            className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+            className="grid grid-cols-1 charcoal-pr md:grid-cols-2 gap-10 items-center"
           >
             {/* Image */}
             <div className={`relative flex justify-center ${imageOrder}`}>
