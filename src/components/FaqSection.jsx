@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { FaPlus, FaTimes } from 'react-icons/fa';
+import { useNavigate, Link } from 'react-router-dom';
 
 const FaqSection = ({ customClass = "w-[98%]", noTopRadius = false }) => {
+    const navigate = useNavigate()
     const faqData = [
         {
           id: 1,
@@ -38,6 +40,7 @@ const FaqSection = ({ customClass = "w-[98%]", noTopRadius = false }) => {
     const toggleFaq = (id) => {
         setOpenFaqId((prev) => (prev === id ? null : id))
     }
+
 
     return (
         <section className={`faq py-10 mb-5 mx-auto ${customClass} text-white bg-black ${noTopRadius ? 'rounded-b-3xl' : 'rounded-4xl'}`}>
@@ -82,7 +85,7 @@ const FaqSection = ({ customClass = "w-[98%]", noTopRadius = false }) => {
                     <p className="mb-6 text-base md:text-lg text-[#696969] leading-relaxed">
                         Díky speciálnímu procesu karbonizace dosahuje výjimečných vlastností, které ho staví vysoko nad klasické dřevěné uhlí
                     </p>
-                    <button className="flex items-center justify-center bg-[#A40C0B] w-1/2 footerBtn hover:bg-red-700 transition text-white font-semibold py-3 rounded-full text-base md:text-lg">
+                    <button onClick={() => navigate('/uhlie')} className="flex items-center justify-center bg-[#A40C0B] w-1/2 footerBtn hover:bg-red-700 transition text-white font-semibold py-3 rounded-full text-base md:text-lg">
                         Carboncil <span> <img src="Arrow.png" alt="Arrow" /></span>
                     </button>
                 </div>
@@ -96,10 +99,18 @@ const FaqSection = ({ customClass = "w-[98%]", noTopRadius = false }) => {
                         <p className='mb-2 text-center  text-white'>Uhlí, které griluje chytře.</p>
                     </div>
                     <nav className="flex justify-center items-end float-right text-right text-sm md:text-base gap-10 mb-5 sm:mb-0">
-                    <a href="#" className="hover:text-gray-400 transition">Domov</a>
-            <a href="/o-nas" className="hover:text-gray-400 transition">O nás</a>
-            <a href="/uhlie" className="hover:text-gray-400 transition">Uhlie</a>
-            <a href="/kontakt" className="hover:text-gray-400 transition">Kontakt</a>
+                    <Link to="/" className="hover:text-gray-400 transition">
+    Domov
+  </Link>
+  <Link to="/o-nas" className="hover:text-gray-400 transition">
+    O nás
+  </Link>
+  <Link to="/uhlie" className="hover:text-gray-400 transition">
+    Uhlie
+  </Link>
+  <Link to="/kontakt" className="hover:text-gray-400 transition">
+    Kontakt
+  </Link>
                     </nav>
                 </div>
                 <div className='flex flex-row justify-between'>

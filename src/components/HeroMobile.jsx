@@ -1,6 +1,10 @@
 import React from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 
-const HeroMobile = () => (
+const HeroMobile = () => {
+  const navigate = useNavigate()
+
+  return (
   <div className="md:hidden heroMobile hero bg-white px-6 py-5 mt-20">
     {/* Nadpis */}
     <h1 className="text-3xl font-bold text-black leading-tight">
@@ -23,17 +27,17 @@ const HeroMobile = () => (
 
       {/* Tlačidlá vo vyrezanom otvore obrázka */}
       <div className="buttons absolute top-2 left-O flex items-center p-1">
-        <button className="bg-black text-white px-6 py-2 rounded-full flex items-center gap-2 hover:bg-gray-800 transition">
+        <button onClick={() => navigate('/uhlie')} className="bg-black text-white px-6 py-2 rounded-full flex items-center gap-2 hover:bg-gray-800 transition">
           Produkty <img src="Arrow.png" alt="" className="w-4 h-4" />
         </button>
-        <a href="#" className="underline px-6 py-2 rounded-full hover:bg-gray-100 transition text-black">
-          Kontakt
-        </a>
+        <Link to="/kontakt" className="underline px-6 py-3 rounded-full hover:text-[#A40C0B] transition">
+  Kontakt
+</Link>
       </div>
 
       {/* Čierna šípka */}
       <div className="absolute bottom-0 right-0 h-2/12 w-95/550 bg-black text-white text-xl p-3 rounded-xl shadow-md flex items-center justify-center">
-  <a href="#"><img src="Arrow1.png" alt="Arrow" className='w-10' /></a>
+      <Link to="/uhlie"><img src="Arrow1.png" alt="Arrow" className='w-16' /></Link>
 </div>
     </div>
 
@@ -53,6 +57,7 @@ const HeroMobile = () => (
       </div>
     </div>
   </div>
-);
+  )
+}
 
 export default HeroMobile;

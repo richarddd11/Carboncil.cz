@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ContactInfo = () => {
   return (
@@ -46,10 +47,18 @@ const ContactInfo = () => {
         <div className="max-w-7xl mx-auto py-10">
           {/* nav pushed to right */}
           <nav className="flex justify-end gap-13 text-sm mb-6 mr-5">
-            <a href="#" className="hover:text-gray-400 transition">Domov</a>
-            <a href="/o-nas" className="hover:text-gray-400 transition">O nás</a>
-            <a href="/uhlie" className="hover:text-gray-400 transition">Uhlie</a>
-            <a href="/kontakt" className="hover:text-gray-400 transition">Kontakt</a>
+          <Link to="/" className="hover:text-gray-400 transition">
+    Domov
+  </Link>
+  <Link to="/o-nas" className="hover:text-gray-400 transition">
+    O nás
+  </Link>
+  <Link to="/uhlie" className="hover:text-gray-400 transition">
+    Uhlie
+  </Link>
+  <Link to="/kontakt" className="hover:text-gray-400 transition">
+    Kontakt
+  </Link>
           </nav>
 
           {/* logo centered */}

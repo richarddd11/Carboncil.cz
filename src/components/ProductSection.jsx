@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
+  const navigate = useNavigate()
+
   return (
     <section className="productSection bg-black text-white py-10 mx-6 rounded-4xl px-6">
       <div className="max-w-8xl bg-black">
@@ -41,7 +44,7 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
                   </p>
                 </div>
                 {showDetailButton && (
-                  <button
+                  <button onClick={() => navigate('/uhlie')}
                     className="absolute bottom-0 right-0 text-white bg-[#A40C0B] w-[12%] h-[9%] rounded-lg flex items-center justify-center hover:bg-red-700 transition"
                     aria-label="Detail produktu"
                   >
@@ -71,7 +74,7 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
                   </p>
                 </div>
                 {showDetailButton && (
-                  <button
+                  <button onClick={() => navigate('/uhlie')}
                     className="absolute bottom-0 right-0 text-white bg-[#A40C0B] w-[12%] h-[9%] rounded-lg flex items-center justify-center hover:bg-red-700 transition"
                     aria-label="Detail produktu"
                   >

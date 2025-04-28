@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactHeroForm = () => {
   return (
-    <section className="max-w-7xl contactHero mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-54">
+    <section className="max-w-7xl contactHero mx-auto px-6 py-20 mt-8 grid grid-cols-1 md:grid-cols-2 gap-54">
       {/* LEFT COLUMN */}
       <div className="space-y-7 md:space-y-10">
         <h1 className="text-5xl font-bold text-[#A40C0B]">Kontaktujte nás</h1>

@@ -1,7 +1,8 @@
-// src/components/AboutUs.jsx
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const AboutUs = () => {
+  const navigate = useNavigate()
   return (
     <section className="relative mx-auto my-12 px-6 max-w-[1324px]">
       <div className="relative w-full">
@@ -40,7 +41,7 @@ const AboutUs = () => {
           className="absolute about-btn"
           style={{ bottom: '0%', right: '0%', width: '5%', height: '16%' }}
         >
-          <button
+          <button onClick={() => navigate('/o-nas')}
             className="w-full h-full bg-black flex items-center justify-center rounded-lg shadow-md hover:bg-gray-800 transition"
             aria-label="Viac o nás"
           >

@@ -82,13 +82,6 @@ const NavBar = () => {
           >
             Uhlie
           </NavLink>
-          <NavLink
-            to="/kontakt"
-            onClick={() => setIsOpen(false)}
-            className={contactClass}
-          >
-            Kontakt
-          </NavLink>
         </nav>
       </div>
     </div>
