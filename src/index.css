@@ -72,21 +72,22 @@
     @apply font-[Inter];
   }
 
-  .productSec h2 {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-  }
-
   .faq,
   .productSec h2 {
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
+  .contactPage h1,
   .aboutPage h2,
   .aboutPage h3 {
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
   .aboutPage {
+    @apply font-[Inter];
+  }
+
+  .contactPage h2, .contactPage h3, .contactPage p {
     @apply font-[Inter];
   }
 
@@ -607,6 +608,10 @@
       width: 23px;
       height: 23px;
     }
+
+    .footer1 nav {
+      gap: 25px;
+    }
   }
 
   @media (min-width: 375px) and (max-width: 700px) {
@@ -687,6 +692,10 @@
     .charcoal-pr p {
       font-size: 14px;
     }
+
+    .contactFooter nav {
+      gap: 40px;
+    }
   }
 
   @media (min-width: 375px) and (max-width: 385px) {
@@ -730,6 +739,16 @@
     }
   }
 
+  @media (min-width: 420px) and (max-width: 475px) { 
+    .aboutBrand h2 {
+      font-size: 26px;
+    }
+
+    .aboutBrand p {
+      font-size: 20px;
+    }
+  }
+
   @media (min-width: 370px) and (max-width: 420px) {
     .heroMobile h1 {
       font-size: 25px;
@@ -747,7 +766,60 @@
       font-size: 13px;
       margin-right: 5px;
     }
+
+    .aboutBrand h2 {
+      font-size: 22px;
+    }
+
+    .aboutBrand p {
+      font-size: 18px;
+    }
+
+    .qoute {
+      font-size: 15px;
+    }
+
+    .grill-div h2 {
+      font-size: 20px;
+    }
+
+    .grill-div p {
+      font-size: 17px;
+    }
+
+    .contactHero h1 {
+      font-size: 45px;
+      margin-top: 15px;
+    }
+
+    .contactInfo h2 {
+      font-size: 19px;
+    }
+
+    .contactInfo p {
+      font-size: 16px;
+    }
+
+
   }
+
+  @media (min-width: 370px) and (max-width: 1023px) { 
+    .contactInfo {
+      text-align: center;
+    }
+
+    .contactFooter nav {
+      justify-content: center;
+    }
+
+    .contactFooter p {
+      text-align: center;
+    }
+
+    .contactHero {
+      gap: 100px;
+    }
+   }
 
   @media (min-width: 420px) and (max-width: 440px) {
     .heroMobile h1 {
@@ -1054,6 +1126,13 @@
     }
   }
 
+  @media (min-width: 768px) and (max-width: 900px) {
+    .aboutBrand h2 {
+      font-size: 40px;
+    }
+    
+  }
+
   @media (min-width: 820px) and (max-width: 1010px) {
     .product-text {
       font-size: 12px;
@@ -1111,6 +1190,20 @@
 
     .about-us {
       font-size: 14px;
+    }
+  }
+
+  @media (max-width: 1145px) {
+    .story {
+      padding-bottom: 0;
+    }
+
+    .grill-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      text-align: center;
     }
   }
 }

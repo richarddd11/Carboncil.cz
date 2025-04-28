@@ -1,11 +1,10 @@
-// src/components/ContactHeroForm.jsx
 import React from 'react';
 
 const ContactHeroForm = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-54">
+    <section className="max-w-7xl contactHero mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-54">
       {/* LEFT COLUMN */}
-      <div className="space-y-10">
+      <div className="space-y-7 md:space-y-10">
         <h1 className="text-5xl font-bold text-[#A40C0B]">Kontaktujte nás</h1>
         <p className="text-lg text-[#696969]">
           Máte otázku k našemu uhlí, chcete větší odběr, nebo si jen nejste jisti, jak správně rozžhavit večer?
@@ -19,7 +18,7 @@ const ContactHeroForm = () => {
         <div className="flex flex-col gap-4">
           <a
             href="tel:+421915633064"
-            className="w-1/2 inline-flex text-lg justify-start items-center gap-3 bg-[#A40C0B] text-white rounded-full py-1 hover:bg-red-800 transition"
+            className="w-60 inline-flex text-lg justify-start items-center gap-3 bg-[#A40C0B] text-white rounded-full py-1 hover:bg-red-800 transition"
           >
             <span className="bg-white rounded-full w-[42px] h-[42px] flex items-center justify-center ml-1">
               <img src="Mobile.png" alt="Telefon" className="w-5 h-5" />
@@ -28,7 +27,7 @@ const ContactHeroForm = () => {
           </a>
           <a
             href="mailto:info@carboncil.com"
-            className="w-1/2  inline-flex text-lg justify-start items-center gap-3 bg-[#A40C0B] text-white rounded-full py-1 hover:bg-red-800 transition"
+            className="w-60  inline-flex text-lg justify-start items-center gap-3 bg-[#A40C0B] text-white rounded-full py-1 hover:bg-red-800 transition"
           >
             <span className="bg-white rounded-full w-[42px] h-[42px] flex items-center justify-center ml-1">
               <img src="Mail.png" alt="Email" className="w-[22px] h-[18px]" />

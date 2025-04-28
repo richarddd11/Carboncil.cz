@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutBrandSection = () => {
   return (
-    <section className="max-w-[1520px] mx-auto px-6 py-20 space-y-32">
+    <section className="max-w-[1520px] aboutBrand mx-auto px-6 py-20 space-y-32">
       {/* Horný blok */}
       <div className="grid md:grid-cols-2 gap-15 items-center">
         {/* Obrázok */}

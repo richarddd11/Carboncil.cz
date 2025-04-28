@@ -96,11 +96,10 @@ const FaqSection = ({ customClass = "w-[98%]", noTopRadius = false }) => {
                         <p className='mb-2 text-center  text-white'>Uhlí, které griluje chytře.</p>
                     </div>
                     <nav className="flex justify-center items-end float-right text-right text-sm md:text-base gap-10 mb-5 sm:mb-0">
-                        <a href="#" className="text-white hover:text-gray-300 transition">O nás</a>
-                        <a href="#" className="text-white hover:text-gray-300 transition">Carboncil</a>
-                        <a href="#" className="text-white hover:text-gray-300 transition">Carbonito</a>
-                        <a href="#" className="text-white hover:text-gray-300 transition">Top quality</a>
-                        <a href="#" className="text-white hover:text-gray-300 transition">Kontakt</a>
+                    <a href="#" className="hover:text-gray-400 transition">Domov</a>
+            <a href="/o-nas" className="hover:text-gray-400 transition">O nás</a>
+            <a href="/uhlie" className="hover:text-gray-400 transition">Uhlie</a>
+            <a href="/kontakt" className="hover:text-gray-400 transition">Kontakt</a>
                     </nav>
                 </div>
                 <div className='flex flex-row justify-between'>
