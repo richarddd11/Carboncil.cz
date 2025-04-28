@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
   return (
-    <section className="productSection bg-black text-white py-10 mx-8 rounded-4xl px-6">
+    <section className="productSection bg-black text-white py-10 mx-6 rounded-4xl px-6">
       <div className="max-w-8xl bg-black">
 
         {showHeading && (

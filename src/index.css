@@ -679,6 +679,14 @@
     .coal .benefits p {
       font-size: 13px;
     }
+
+    .charcoal-pr h2 {
+      font-size: 25px;
+    }
+
+    .charcoal-pr p {
+      font-size: 14px;
+    }
   }
 
   @media (min-width: 375px) and (max-width: 385px) {

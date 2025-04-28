@@ -9,14 +9,14 @@ import Coal from '../components/Coal'
 
 const ProductPage = () => {
   return (
-    <div className='mt-30 productPage'>
+    <div className='mt-25 productPage'>
       
      <ProductSection showDetailButton={false} showHeading={true} />
      <CharcoalInfoSection />
      <Coal />
      <BiolihSectionMobile />
      <CharcoalVariantsSectionMobile />
-     <FaqSection customClass="w-[96%]" noTopRadius={true} />
+     <FaqSection customClass="w-[100%]" noTopRadius={true} />
     </div>
   )
 }
