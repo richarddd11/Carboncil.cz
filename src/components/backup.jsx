@@ -51,9 +51,7 @@ const FaqSection = ({ customClass = "w-[98%]", noTopRadius = false }) => {
             return (
               <div
                 key={item.id}
-                className={`faq rounded-lg p-4 relative bg-no-repeat bg-cover bg-center ${
-                  isOpen ? 'pt-13 open-faq' : 'closed-faq'
-                }`}
+                className={`faq rounded-lg p-4 relative bg-no-repeat bg-cover bg-center ${isOpen ? 'pt-13 open-faq' : 'closed-faq'}`}
                 style={{
                   backgroundImage: isOpen
                     ? `url('openFaqBg.png')`
@@ -64,15 +62,16 @@ const FaqSection = ({ customClass = "w-[98%]", noTopRadius = false }) => {
                   {item.question}
                 </span>
 
-                {/* Upravené tlačidlo: w-10 h-10 + centering */}
                 <button
                   onClick={() => toggleFaq(item.id)}
                   className={`
                     absolute
                     ${isOpen ? 'faq-toggle-open' : 'faq-toggle-closed'}
-                    w-10 h-10 flex items-center justify-center p-0
+                    w-10 h-10
+                    flex items-center justify-center
+                    bg-transparent p-0 rounded-none
+                    transition-transform hover:scale-105
                   `}
-                  aria-label={isOpen ? 'Zavřít otázku' : 'Otevřít otázku'}
                 >
                   {isOpen
                     ? <FaTimes className="text-white text-2xl" />
@@ -80,10 +79,7 @@ const FaqSection = ({ customClass = "w-[98%]", noTopRadius = false }) => {
                   }
                 </button>
 
-                <div className={`transition-all duration-300 overflow-hidden ${
-                    isOpen ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'
-                  }`}
-                >
+                <div className={`transition-all duration-300 overflow-hidden ${isOpen ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
                   <p className="text-lg md:text-lg text-white answer">
                     {item.answer}
                   </p>
@@ -98,12 +94,10 @@ const FaqSection = ({ customClass = "w-[98%]", noTopRadius = false }) => {
             Prečo je Carboncil revolučné uhlie?
           </h2>
           <p className="mb-6 text-base md:text-lg text-[#696969] leading-relaxed">
-            Carboncil je unikátní uhlí vyrobené z čisté biomasy, bez jakýchkoli
-            chemikálií, bez zápachu a bez kouře.
+            Carboncil je unikátní uhlí vyrobené z čisté biomasy, bez jakýchkoli chemikálií, bez zápachu a bez kouře.
           </p>
           <p className="mb-6 text-base md:text-lg text-[#696969] leading-relaxed">
-            Díky speciálnímu procesu karbonizace dosahuje výjimečných vlastností,
-            které ho staví vysoko nad klasické dřevěné uhlí.
+            Díky speciálnímu procesu karbonizace dosahuje výjimečných vlastností, které ho staví vysoko nad klasické dřevěné uhlí.
           </p>
           <button
             onClick={() => navigate('/uhlie')}

@@ -100,93 +100,35 @@
     @apply font-[Inter];
   }
 
-  @media (min-width: 440px) and (max-width: 640px) {
-    .open-faq {
-      background-size: 100%;
-      margin: 0;
-      padding: 14px;
-      margin-bottom: 8px;
-    }
 
+  @media (min-width: 500px) {
     .faq-toggle-open {
-      top: 12%;
+      top: 13%;
       right: 2%;
-      transform: translateX(-20%);
+      transform: translateX(-18%);
     }
 
     .faq-toggle-closed {
-      top: 30%;
-      right: 3%;
-      transform: translateX(-3%);
-    }
-
-    .ques-open {
-      font-size: 17px;
-    }
-
-    .answer {
-      font-size: 15px;
-    }
-
-    .container {
-      width: 95%;
-    }
-  }
-
-  @media (min-width: 540px) {
-    .faq-toggle-open {
-      top: 11%;
+      top: 17%;
       right: 2%;
-      transform: translateX(-24%);
+      transform: translateX(-16%);
     }
 
-    .faq-toggle-closed {
-      top: 30%;
-      right: 3%;
-      transform: translateX(-7%);
-    }
-  }
-
-  @media (min-width: 600px) {
-    .faq-toggle-open {
-      top: 11%;
-      right: 3%;
-      transform: translateX(-15%);
-    }
-
-    .faq-toggle-closed {
-      top: 30%;
-      right: 3%;
-      transform: translateX(-13%);
-    }
-
-    .open-faq {
-      padding-top: 38px;
-    }
-  }
-
-  @media (min-width: 640px) {
-    .faq-toggle-open {
-      top: 12%;
-      right: 3%;
-      transform: translateX(-24%);
-    }
-
-    .faq-toggle-closed {
-      top: 30%;
-      right: 4%;
-      transform: translateX(-1%);
-    }
-
-    .open-faq {
-      padding-top: 35px;
-    }
-  }
-
-  @media (min-width: 510px) and (max-width: 768px) {
     .container {
       width: 95%;
       margin: 0 auto;
+    }
+
+    .open-faq {
+      padding: 15px;
+    }
+
+    .answer {
+      font-size: 16px;
+    }
+
+    .ques-open {
+      font-size: 18px;
     }
   }
 
@@ -232,37 +174,157 @@
     }
 
     .faq-toggle-open {
-      top: 13%;
+      top: 8%;
       right: 3%;
-      transform: translateX(-20%);
+      transform: translateX(-18%);
     }
 
     .faq-toggle-closed {
-      top: 30%;
+      top: 19%;
       right: 3%;
-      transform: translateX(-19%);
+      transform: translateX(-16%);
+    }
+
+    .answer {
+      font-size: 15px;
     }
 
     .open-faq {
-      padding-top: 30px;
+      padding: 30px;
+    }
+  }
+
+  @media (min-width: 860px) {
+    .container {
+      width: 75%;
+    }
+
+    .faq-toggle-open {
+      top: 7%;
+      right: 3%;
+      transform: translateX(-24%);
+    }
+
+    .faq-toggle-closed {
+      top: 19%;
+      right: 3%;
+      transform: translateX(-21%);
+    }
+
+    .answer {
+      font-size: 15px;
+    }
+
+    .open-faq {
+      padding: 30px;
     }
   }
 
   @media (min-width: 900px) {
     .faq-toggle-open {
-      top: 12%;
+      top: 15%;
       right: 4%;
-      transform: translateX(-13%);
+      transform: translateX(-9%);
     }
 
     .faq-toggle-closed {
-      top: 30%;
+      top: 19%;
       right: 4%;
-      transform: translateX(-10%);
+      transform: translateX(-7%);
     }
 
     .open-faq {
-      padding-top: 40px;
+      padding: 25px;
+    }
+
+    .answer {
+      font-size: 20px;
+      width: 90%;
+    }
+
+    .ques-open {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 950px) {
+    .faq-toggle-open {
+      top: 16%;
+      right: 4%;
+      transform: translateX(-12%);
+    }
+
+    .faq-toggle-closed {
+      top: 19%;
+      right: 4%;
+      transform: translateX(-9%);
+    }
+
+    .open-faq {
+      padding: 30px;
+    }
+
+    .answer {
+      font-size: 20px;
+      width: 90%;
+    }
+
+    .ques-open {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 970px) {
+    .faq-toggle-open {
+      top: 17%;
+      right: 4%;
+      transform: translateX(-14%);
+    }
+
+    .faq-toggle-closed {
+      top: 19%;
+      right: 4%;
+      transform: translateX(-11%);
+    }
+
+    .open-faq {
+      padding: 35px;
+    }
+
+    .answer {
+      font-size: 20px;
+      width: 90%;
+    }
+
+    .ques-open {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 984px) {
+    .faq-toggle-open {
+      top: 17%;
+      right: 4%;
+      transform: translateX(-14%);
+    }
+
+    .faq-toggle-closed {
+      top: 19%;
+      right: 4%;
+      transform: translateX(-11%);
+    }
+
+    .open-faq {
+      padding: 37px;
+    }
+
+    .answer {
+      font-size: 20px;
+      width: 85%;
+    }
+
+    .ques-open {
+      font-size: 23px;
     }
   }
 
@@ -286,34 +348,61 @@
 
   @media (min-width: 1024px) and (max-width: 1135px) {
     .container {
-      width: 70%;
+      width: 80%;
       padding: 0 40px;
     }
 
     .faq-toggle-open {
-      top: 12%;
-      right: 3%;
-      transform: translateX(-28%);
+      top: 17%;
+      right: 4%;
+      transform: translateX(-13%);
     }
 
     .faq-toggle-closed {
-      top: 30%;
-      right: 3%;
-      transform: translateX(-27%);
+      top: 20%;
+      right: 4%;
+      transform: translateX(-11%);
+    }
+
+    .closed-faq {
+      padding: 20px;
+    }
+  }
+
+  @media (min-width: 1079px) and (max-width: 1135px) {
+    .container {
+      width: 80%;
+      padding: 0 40px;
+    }
+
+    .faq-toggle-open {
+      top: 16%;
+      right: 4%;
+      transform: translateX(-18%);
+    }
+
+    .faq-toggle-closed {
+      top: 20%;
+      right: 4%;
+      transform: translateX(-14%);
+    }
+
+    .answer {
+      width: 80%;
     }
   }
 
   @media (min-width: 1135px) {
     .faq-toggle-open {
-      top: 18%;
+      top: 10%;
       right: 3%;
       transform: translateX(-10%);
     }
 
     .faq-toggle-closed {
-      top: 30%;
+      top: 19%;
       right: 3%;
-      transform: translateX(-8%);
+      transform: translateX(-9%);
     }
 
     .container {
@@ -326,23 +415,28 @@
       padding: 14px;
       margin-bottom: 8px;
     }
+
+    .answer {
+      font-size: 15px;
+    }
   }
 
   @media (min-width: 1360px) {
     .faq-toggle-open {
-      top: 18%;
+      top: 13%;
       right: 3%;
-      transform: translateX(-13%);
+      transform: translateX(-11%);
     }
 
     .faq-toggle-closed {
-      top: 30%;
+      top: 17%;
       right: 3%;
-      transform: translateX(-12%);
+      transform: translateX(-9%);
     }
 
     .answer {
       width: 90%;
+      font-size: 17px;
     }
   }
 
@@ -369,20 +463,206 @@
 
   @media (min-width: 540px) and (max-width: 600px) {
     .faq-toggle-open {
-      top: 10%;
+      top: 13%;
       right: 2%;
-      transform: translateX(-26%);
+      transform: translateX(-21%);
     }
 
     .faq-toggle-closed {
-      top: 30%;
+      top: 18%;
       right: 2%;
-      transform: translateX(-26%);
+      transform: translateX(-20%);
     }
 
     .open-faq {
       background-size: 100%;
       padding: 18px;
+    }
+
+    .answer {
+      font-size: 17px;
+    }
+  }
+
+  @media (min-width: 570px) and (max-width: 600px) {
+    .faq-toggle-open {
+      top: 14%;
+      right: 2%;
+      transform: translateX(-25%);
+    }
+
+    .faq-toggle-closed {
+      top: 18%;
+      right: 2%;
+      transform: translateX(-24%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 18px;
+    }
+
+    .answer {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 640px) {
+    .faq-toggle-open {
+      top: 17%;
+      right: 2%;
+      transform: translateX(-29%);
+    }
+
+    .faq-toggle-closed {
+      top: 18%;
+      right: 2%;
+      transform: translateX(-24%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 28px;
+    }
+
+    .answer {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 625px) and (max-width: 640px) {
+    .faq-toggle-open {
+      top: 16%;
+      right: 3%;
+      transform: translateX(-19%);
+    }
+
+    .faq-toggle-closed {
+      top: 18%;
+      right: 3%;
+      transform: translateX(-17%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 28px;
+    }
+
+    .answer {
+      font-size: 18px;
+      width: 90%;
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 680px) {
+    .faq-toggle-open {
+      top: 14%;
+      right: 3%;
+      transform: translateX(-17%);
+    }
+
+    .faq-toggle-closed {
+      top: 18%;
+      right: 3%;
+      transform: translateX(-16%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 18px;
+    }
+
+    .answer {
+      font-size: 19px;
+      width: 90%;
+    }
+
+    .ques-open {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 680px) and (max-width: 720px) {
+    .faq-toggle-open {
+      top: 13%;
+      right: 3%;
+      transform: translateX(-20%);
+    }
+
+    .faq-toggle-closed {
+      top: 18%;
+      right: 3%;
+      transform: translateX(-18%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 18px;
+    }
+
+    .answer {
+      font-size: 19px;
+      width: 90%;
+    }
+
+    .ques-open {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 720px) and (max-width: 770px) {
+    .faq-toggle-open {
+      top: 12%;
+      right: 3%;
+      transform: translateX(-23%);
+    }
+
+    .faq-toggle-closed {
+      top: 18%;
+      right: 3%;
+      transform: translateX(-21%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 18px;
+    }
+
+    .answer {
+      font-size: 19px;
+      width: 90%;
+    }
+
+    .ques-open {
+      font-size: 23px;
+    }
+  }
+
+  @media (min-width: 770px) and (max-width: 810px) {
+    .faq-toggle-open {
+      top: 11%;
+      right: 3%;
+      transform: translateX(-25%);
+    }
+
+    .faq-toggle-closed {
+      top: 18%;
+      right: 3%;
+      transform: translateX(-24%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 18px;
+    }
+
+    .answer {
+      font-size: 19px;
+      width: 85%;
+    }
+
+    .ques-open {
+      font-size: 23px;
     }
   }
 
@@ -444,17 +724,17 @@
     }
   }
 
-  @media (min-width: 400px) and (max-width: 440px) {
+  @media (min-width: 390px) and (max-width: 420px) {
     .faq-toggle-open {
-      top: 15%;
+      top: 11%;
       right: 1%;
-      transform: translateX(-18%);
+      transform: translateX(-14%);
     }
 
     .faq-toggle-closed {
-      top: 30%;
+      top: 15%;
       right: 1%;
-      transform: translateX(-17%);
+      transform: translateX(-12%);
     }
 
     .open-faq {
@@ -467,19 +747,75 @@
       margin-left: 10px;
       width: 95%;
     }
+
+    .ques-closed {
+      font-size: 17px;
+    }
   }
 
-  @media (min-width: 440px) and (max-width: 510px) {
+  @media (min-width: 420px) and (max-width: 440px) {
     .faq-toggle-open {
-      top: 8%;
-      right: 2%;
-      transform: translateX(-19%);
+      top: 11%;
+      right: 1%;
+      transform: translateX(-14%);
     }
 
     .faq-toggle-closed {
-      top: 30%;
+      top: 15%;
+      right: 1%;
+      transform: translateX(-12%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 10px;
+    }
+
+    .answer {
+      font-size: 13px;
+      margin-left: 10px;
+      width: 95%;
+    }
+
+    .ques-closed {
+      font-size: 17px;
+    }
+  }
+
+  @media (min-width: 440px) and (max-width: 480px) {
+    .faq-toggle-open {
+      top: 13%;
       right: 2%;
-      transform: translateX(-17%);
+      transform: translateX(-10%);
+    }
+
+    .faq-toggle-closed {
+      top: 17%;
+      right: 2%;
+      transform: translateX(-9%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 15px;
+    }
+
+    .answer {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 420px) and (max-width: 440px) {
+    .faq-toggle-open {
+      top: 13%;
+      right: 2%;
+      transform: translateX(-7%);
+    }
+
+    .faq-toggle-closed {
+      top: 17%;
+      right: 2%;
+      transform: translateX(-5%);
     }
 
     .open-faq {
@@ -488,17 +824,40 @@
     }
   }
 
-  @media (min-width: 375px) and (max-width: 390px) {
+  @media (min-width: 480px) and (max-width: 500px) {
     .faq-toggle-open {
-      top: 17%;
-      right: 1%;
-      transform: translateX(-15%);
+      top: 15%;
+      right: 2%;
+      transform: translateX(-14%);
     }
 
     .faq-toggle-closed {
-      top: 30%;
+      top: 17%;
+      right: 2%;
+      transform: translateX(-11%);
+    }
+
+    .open-faq {
+      background-size: 100%;
+      padding: 20px;
+    }
+
+    .answer {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 390px) {
+    .faq-toggle-open {
+      top: 12%;
       right: 1%;
       transform: translateX(-11%);
+    }
+
+    .faq-toggle-closed {
+      top: 16%;
+      right: 1%;
+      transform: translateX(-8%);
     }
 
     .open-faq {
@@ -510,6 +869,10 @@
       font-size: 13px;
       margin-left: 10px;
       width: 95%;
+    }
+
+    .ques-closed {
+      font-size: 17px;
     }
   }
 

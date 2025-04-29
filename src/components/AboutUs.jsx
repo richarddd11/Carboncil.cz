@@ -42,7 +42,7 @@ const AboutUs = () => {
           style={{ bottom: '0%', right: '0%', width: '5%', height: '16%' }}
         >
           <button onClick={() => navigate('/o-nas')}
-            className="w-full h-full bg-black flex items-center justify-center rounded-lg shadow-md hover:bg-gray-800 transition"
+            className="w-full h-full bg-black flex items-center justify-center rounded-lg shadow-md transform transition-transform duration-200 hover:scale-105"
             aria-label="Viac o nás"
           >
             <img src="Arrow1.png" alt=">" className="w-10 h-10" />

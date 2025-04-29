@@ -13,10 +13,10 @@ const NavBar = () => {
 
   // Špeciálna logika pre Kontakt tlačidlo
   const contactClass = ({ isActive }) =>
-    `text-sm font-medium px-6 py-2 rounded-full transition flex items-center justify-center ${
+    `text-sm font-medium px-6 py-2 rounded-full transition flex items-center justify-center  ${
       isActive
         ? 'bg-[#A40C0B] text-white'
-        : 'bg-black text-white hover:bg-gray-800'
+        : 'bg-black text-white hover:bg-[#A40C0B]'
     }`;
 
   return (
@@ -55,7 +55,7 @@ const NavBar = () => {
 
       {/* Mobilné menu */}
       <div
-        className={`absolute z-50 top-full left-0 w-full bg-white shadow-md flex flex-col items-center py-4 transition-all duration-300 transform overflow-hidden md:hidden ${
+        className={`absolute z-50 top-full left-0 w-full bg-white shadow-md flex flex-col items-center py-4 transition-all duration-300 transform overflow-hidden min-[799px]:hidden ${
           isOpen ? 'max-h-96 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2'
         }`}
       >

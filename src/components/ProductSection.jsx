@@ -45,7 +45,7 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
                 </div>
                 {showDetailButton && (
                   <button onClick={() => navigate('/uhlie')}
-                    className="absolute bottom-0 right-0 text-white bg-[#A40C0B] w-[12%] h-[9%] rounded-lg flex items-center justify-center hover:bg-red-700 transition"
+                    className="absolute bottom-0 right-0 text-white bg-[#A40C0B] w-[12%] h-[9%] rounded-lg flex items-center justify-center transform transition-transform duration-200 hover:scale-125"
                     aria-label="Detail produktu"
                   >
                     <img src="Arrow1.png" alt="Arrow" className="w-10" />
@@ -75,7 +75,7 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
                 </div>
                 {showDetailButton && (
                   <button onClick={() => navigate('/uhlie')}
-                    className="absolute bottom-0 right-0 text-white bg-[#A40C0B] w-[12%] h-[9%] rounded-lg flex items-center justify-center hover:bg-red-700 transition"
+                    className="absolute bottom-0 right-0 text-white bg-[#A40C0B] w-[12%] h-[9%] rounded-lg flex items-center justify-center transform transition-transform duration-200 hover:scale-125"
                     aria-label="Detail produktu"
                   >
                     <img src="Arrow1.png" alt="Arrow" className="w-10" />
