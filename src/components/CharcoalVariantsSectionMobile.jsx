@@ -30,7 +30,7 @@ const CharcoalVariantsSectionMobile = () => {
             <img src="L.png" alt="L" className="w-6 h-auto" />
           </div>
           <h3 className="text-xl font-bold">Carboncil 1,5kg</h3>
-          <p className="text-[#858383] text-sm leading-relaxed">
+          <p className="text-[#9e9c9c] text-sm leading-relaxed">
             Ideální pro menší gril nebo rychlé grilování s rodinou. Rozhoří se za
             pár minut, bez kouře a bez chemie. Praktické balení, které se hodí
             na každý výlet.
@@ -54,7 +54,7 @@ const CharcoalVariantsSectionMobile = () => {
             <img src="XXL.png" alt="XXL" className="w-21 h-auto" />
           </div>
           <h3 className="text-lg font-bold">Top Quality 15 kg</h3>
-          <p className="text-[#858383] text-sm leading-relaxed ">
+          <p className="text-[#9e9c9c] text-sm leading-relaxed ">
             Velké balení pro náročné grilování nebo profesionální použití.
             Výdrž, výkon a pohodlí při manipulaci – vše, co potřebujete pro pořádný
             grilovací zážitek bez starostí.

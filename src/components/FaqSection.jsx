@@ -97,11 +97,11 @@ const FaqSection = ({ customClass = "w-[98%]", noTopRadius = false }) => {
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
             Prečo je Carboncil revolučné uhlie?
           </h2>
-          <p className="mb-6 text-base md:text-lg text-[#696969] leading-relaxed">
+          <p className="mb-6 text-base md:text-lg text-[#9e9c9c] leading-relaxed">
             Carboncil je unikátní uhlí vyrobené z čisté biomasy, bez jakýchkoli
             chemikálií, bez zápachu a bez kouře.
           </p>
-          <p className="mb-6 text-base md:text-lg text-[#696969] leading-relaxed">
+          <p className="mb-6 text-base md:text-lg text-[#9e9c9c] leading-relaxed">
             Díky speciálnímu procesu karbonizace dosahuje výjimečných vlastností,
             které ho staví vysoko nad klasické dřevěné uhlí.
           </p>

@@ -10,13 +10,13 @@ const Footer = () => {
         <Link to="/" className="hover:text-gray-400 transition">
     Domov
   </Link>
-  <Link to="/o-nas" className="hover:text-gray-400 transition">
+  <Link to="/o-nas" className="hover:text-[#A40C0B] transition">
     O nás
   </Link>
-  <Link to="/uhlie" className="hover:text-gray-400 transition">
+  <Link to="/uhlie" className="hover:text-[#A40C0B] transition">
     Uhlie
   </Link>
-  <Link to="/kontakt" className="hover:text-gray-400 transition">
+  <Link to="/kontakt" className="hover:text-[#A40C0B] transition">
     Kontakt
   </Link>
         </nav>
