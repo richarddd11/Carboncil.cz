@@ -27,7 +27,7 @@ const HeroMobile = () => {
 
       {/* Tlačidlá vo vyrezanom otvore obrázka */}
       <div className="buttons absolute top-2 left-O flex items-center p-1">
-        <button onClick={() => navigate('/uhlie')} className="bg-black text-white px-6 py-2 rounded-full flex items-center gap-2 transform transition-transform duration-200 hover:scale-105">
+        <button onClick={() => navigate('/uhlie')} className="bg-black text-white px-6 py-2 rounded-full flex items-center gap-2 transform transition-transform duration-200 hover:scale-105 cursor-pointer">
           Produkty <img src="Arrow.png" alt="" className="w-4 h-4" />
         </button>
         <Link to="/kontakt" className="underline px-6 py-3 rounded-full hover:text-[#A40C0B] transition">

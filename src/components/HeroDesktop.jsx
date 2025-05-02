@@ -24,7 +24,7 @@ const HeroSection = () => {
 
           {/* Buttons */}
           <div className="flex max-[768px]:justify-center gap-4 mt-8">
-            <button onClick={() => navigate('/uhlie')} className="bg-black text-white px-10 py-3 rounded-full flex items-center gap-2 transform transition-transform duration-200 hover:scale-105">
+            <button onClick={() => navigate('/uhlie')} className="bg-black text-white px-10 py-3 rounded-full flex items-center gap-2 transform transition-transform duration-200 hover:scale-105 cursor-pointer">
               Produkty <span><img src="Arrow.png" alt="" /></span>
             </button>
             <Link to="/kontakt" className="underline px-6 py-3 rounded-full hover:text-[#A40C0B] transition">
