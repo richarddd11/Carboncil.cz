@@ -6,13 +6,18 @@ export const handler = async (event) => {
 
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
-    port: process.env.SMTP_PORT,
-    secure: false,
+    port: Number(process.env.SMTP_PORT),
+    secure: process.env.SMTP_SECURE === 'true',
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
     },
+
+    greetingTimeout: 5000,      // ak server neodpovie, zruší sa spojenie po 5 sekundách
+  connectionTimeout: 10000,
   });
+
+  console.log('About to send email:', { name, email, phone, product });
 
   try {
     await transporter.sendMail({
