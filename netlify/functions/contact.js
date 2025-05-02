@@ -13,8 +13,8 @@ export const handler = async (event) => {
       pass: process.env.SMTP_PASS,
     },
 
-    greetingTimeout: 5000,      // ak server neodpovie, zruší sa spojenie po 5 sekundách
-  connectionTimeout: 10000,
+    greetingTimeout: 30000,      // ak server neodpovie, zruší sa spojenie po 5 sekundách
+  connectionTimeout: 30000,
   });
 
   console.log('About to send email:', { name, email, phone, product });
