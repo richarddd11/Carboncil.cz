@@ -18,8 +18,9 @@ const ContactInfo = () => {
         {/* 2) Text block */}
         <div className="space-y-8 contactInfo lg:pl-16 mb-25 relative z-20">
           <div className="space-y-2">
-            <p className="text-lg font-semibold">Carboncil s.r.o.</p>
-            <p className="text-lg text-[#CCCCCC]">Uhelná 12, 101 00 Praha</p>
+            <p className="text-lg font-semibold">Carboncil.cz s.r.o.</p>
+            <p className="text-lg text-[#CCCCCC]">IČO:	23128194</p>
+            <p className="text-lg text-[#CCCCCC]">	Sadová 1243/16, 789 85 Mohelnice</p>
           </div>
           <div className="space-y-2 mt-18">
             <p className="text-2xl font-semibold text-[#A40C0B]">Odpovídáme:</p>
