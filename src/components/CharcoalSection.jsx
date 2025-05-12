@@ -1,33 +1,36 @@
 import React from "react";
-
-const features = [
-  {
-    title: "Přírodní udržitelnost",
-    text: `Naše uhlí pochází z Venezuely, země s bohatými lesními zdroji, kde se těží v souladu s přísnými principy udržitelnosti. Využíváme výhradně dřevěný odpad z certifikovaných zdrojů, který by jinak zůstal nevyužitý.`,
-    image: "Coal1.png",
-    alt: "Uhlí a venezuelská vlajka",
-    showFlag: true,
-    desktopTextFirst: true,
-  },
-  {
-    title: "Žádná chemie",
-    text: `Každý kus uhlí Carboncil je vyroben bez použití ropných derivátů, chemických podpalovačů nebo jiných syntetických látek. Výsledkem je čistý přírodní produkt, který hoří rovnoměrně, produkuje minimum kouře a nezanechává v jídle nepříjemný zápach.`,
-    image: "Coal2.png",
-    alt: "Čisté uhlí",
-    showFlag: false,
-    desktopTextFirst: false,
-  },
-  {
-    title: "Okamžité zapálení",
-    text: `Jedinečnou výhodou Carboncilu je jeho samozápalná schopnost. Díky přírodnímu biolihu je příprava grilu jednodušší než kdy dřív – bez nutnosti použít podpalovač, papír nebo sirky. Stačí škrtout a oheň je na světě.`,
-    image: "Coal3.png",
-    alt: "Zápalné uhlí",
-    showFlag: false,
-    desktopTextFirst: true,
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const CharcoalInfoSection = () => {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      title: t("charcoal_feature_1_title"),
+      text: t("charcoal_feature_1_desc"),
+      image: "Coal1.png",
+      alt: "Charcoal and Venezuelan flag",
+      showFlag: true,
+      desktopTextFirst: true,
+    },
+    {
+      title: t("charcoal_feature_2_title"),
+      text: t("charcoal_feature_2_desc"),
+      image: "Coal2.png",
+      alt: "Clean charcoal",
+      showFlag: false,
+      desktopTextFirst: false,
+    },
+    {
+      title: t("charcoal_feature_3_title"),
+      text: t("charcoal_feature_3_desc"),
+      image: "Coal3.png",
+      alt: "Igniting charcoal",
+      showFlag: false,
+      desktopTextFirst: true,
+    },
+  ];
+
   return (
     <section className="productSec max-w-6xl mx-auto px-6 py-16 space-y-28">
       {features.map((item, index) => {
@@ -54,7 +57,7 @@ const CharcoalInfoSection = () => {
               {item.showFlag && (
                 <img
                   src="Flag.png"
-                  alt="Venezuelská vlajka"
+                  alt="Venezuelan flag"
                   className="absolute top-2 right-2 w-[85px] h-auto max-w-none"
                 />
               )}

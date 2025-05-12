@@ -1,39 +1,36 @@
-// src/components/FaqSection.jsx
 import React, { useState } from 'react';
 import { FaPlus, FaTimes } from 'react-icons/fa';
 import { useNavigate, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const FaqSection = ({ customClass = "w-[98%]", noTopRadius = false }) => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [openFaqId, setOpenFaqId] = useState(null);
 
   const faqData = [
     {
       id: 1,
-      question: 'Proč zrovna z Venezuely?',
-      answer:
-        'Venezuela má jedinečné podmínky, kdy vzniká dřevo s vysokou hustotou. Uhlí je tak mimořádně topné a čistě přírodní.',
+      question: t('faq_question_1'),
+      answer: t('faq_answer_1'),
       bgImage: "FaqBg.png",
     },
     {
       id: 2,
-      question: 'Hoří Carboncil příliš rychle?',
-      answer:
-        'Naopak. I když se rozžhaví rychle, jeho výdrž je dlouhá a žár stabilní. To znamená, že si užijete dlouhé grilování bez nutnosti přikládání.',
+      question: t('faq_question_2'),
+      answer: t('faq_answer_2'),
       bgImage: "FaqBg.png",
     },
     {
       id: 3,
-      question: 'Kde si mohu Carboncil koupit?',
-      answer:
-        'Carboncil je dostupný v našem e-shopu a v síti vybraných prodejen. Distribuční síť se pravidelně rozšiřuje pro lepší dostupnost.',
+      question: t('faq_question_3'),
+      answer: t('faq_answer_3'),
       bgImage: "FaqBg.png",
     },
     {
       id: 4,
-      question: 'Můžu používat Carboncil na balkoně?',
-      answer:
-        'Díky minimální kouřivosti je Carboncil ideální i do menších prostor, včetně balkonů. Přesto vždy dodržujte bezpečnostní předpisy.',
+      question: t('faq_question_4'),
+      answer: t('faq_answer_4'),
       bgImage: "FaqBg.png",
     },
   ];
@@ -64,20 +61,14 @@ const FaqSection = ({ customClass = "w-[98%]", noTopRadius = false }) => {
                   {item.question}
                 </span>
 
-                {/* Upravené tlačidlo: w-10 h-10 + centering */}
                 <button
                   onClick={() => toggleFaq(item.id)}
-                  className={`
-                    absolute
-                    ${isOpen ? 'faq-toggle-open' : 'faq-toggle-closed'}
-                    w-10 h-10 flex items-center justify-center p-0
-                  `}
-                  aria-label={isOpen ? 'Zavřít otázku' : 'Otevřít otázku'}
+                  className={`absolute ${isOpen ? 'faq-toggle-open' : 'faq-toggle-closed'} w-10 h-10 flex items-center justify-center p-0`}
+                  aria-label={isOpen ? 'Close question' : 'Open question'}
                 >
                   {isOpen
                     ? <FaTimes className="text-white text-2xl" />
-                    : <FaPlus  className="text-white text-2xl" />
-                  }
+                    : <FaPlus className="text-white text-2xl" />}
                 </button>
 
                 <div className={`transition-all duration-300 overflow-hidden ${
@@ -95,15 +86,13 @@ const FaqSection = ({ customClass = "w-[98%]", noTopRadius = false }) => {
 
         <div className="text flex flex-col justify-center mx-5">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-            Prečo je Carboncil revolučné uhlie?
+            {t('faq_title')}
           </h2>
           <p className="mb-6 text-base md:text-lg text-[#9e9c9c] leading-relaxed">
-            Carboncil je unikátní uhlí vyrobené z čisté biomasy, bez jakýchkoli
-            chemikálií, bez zápachu a bez kouře.
+            {t('faq_desc_1')}
           </p>
           <p className="mb-6 text-base md:text-lg text-[#9e9c9c] leading-relaxed">
-            Díky speciálnímu procesu karbonizace dosahuje výjimečných vlastností,
-            které ho staví vysoko nad klasické dřevěné uhlí.
+            {t('faq_desc_2')}
           </p>
           <button
             onClick={() => navigate('/uhlie')}
@@ -118,12 +107,12 @@ const FaqSection = ({ customClass = "w-[98%]", noTopRadius = false }) => {
 
       <footer className="relative px-5 2xl:max-w-410 mb-10 pt-20 mx-auto bg-black rounded-b-4xl">
         <div className="fot flex flex-col justify-between md:flex-row py-4 px-2 text-sm md:text-base">
-          <p className="mb-2 text-center text-white">Uhlí, které griluje chytře.</p>
+          <p className="mb-2 text-center text-white">{t('footer_slogan')}</p>
           <nav className="flex justify-center items-end float-right text-right text-sm md:text-base gap-10 mb-5 sm:mb-0">
-            <Link to="/" className="hover:text-[#A40C0B] transition">Domov</Link>
-            <Link to="/o-nas" className="hover:text-[#A40C0B] transition">O nás</Link>
-            <Link to="/uhlie" className="hover:text-[#A40C0B] transition">Uhlie</Link>
-            <Link to="/kontakt" className="hover:text-[#A40C0B] transition">Kontakt</Link>
+            <Link to="/" className="hover:text-[#A40C0B] transition">{t('nav_home')}</Link>
+            <Link to="/o-nas" className="hover:text-[#A40C0B] transition">{t('nav_about')}</Link>
+            <Link to="/uhlie" className="hover:text-[#A40C0B] transition">{t('nav_products')}</Link>
+            <Link to="/kontakt" className="hover:text-[#A40C0B] transition">{t('nav_contact')}</Link>
           </nav>
         </div>
         <div className="flex flex-row justify-between">
