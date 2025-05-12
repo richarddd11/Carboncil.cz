@@ -22,9 +22,14 @@ const HeroSection = () => {
 
           {/* Buttons */}
           <div className="flex max-[768px]:justify-center gap-4 mt-8">
-            <button onClick={() => navigate('/uhlie')} className="bg-black text-white px-10 py-3 rounded-full flex items-center gap-2 transform transition-transform duration-200 hover:scale-105 cursor-pointer">
-              {t('product_detail')} <span><img src="Arrow.png" alt="" /></span>
-            </button>
+          <a
+  href="https://www.chutespanelska.cz/grilovaci-uhli/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-black text-white px-10 py-3 rounded-full flex items-center gap-2 transform transition-transform duration-200 hover:scale-105 cursor-pointer"
+>
+  {t('product_detail')} <span><img src="Arrow.png" alt="" /></span>
+</a>
             <Link to="/kontakt" className="underline px-6 py-3 rounded-full hover:text-[#A40C0B] transition">
               {t('nav_contact')}
             </Link>
@@ -62,7 +67,13 @@ const HeroSection = () => {
 
           {/* Čierna šípka */}
           <div className="absolute bottom-0 right-0 h-2/9 w-133/550 bg-black text-white text-xl p-3 rounded-xl shadow-md flex items-center justify-center">
-            <Link to="/uhlie"><img src="Arrow1.png" alt="Arrow" className='w-16' /></Link>
+          <a
+    href="https://www.chutespanelska.cz/grilovaci-uhli/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src="Arrow1.png" alt="Arrow" className="w-16" />
+  </a>
           </div>
         </div>
       </div>

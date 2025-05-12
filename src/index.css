@@ -881,13 +881,11 @@
       top: 5px;
     }
 
-    .buttons button {
+    .buttons a {
       padding: 7px 10px;
     }
 
-    .buttons a {
-       padding: 5px;
-    }
+    
 
     
   }
@@ -897,8 +895,8 @@
       top: 5px;
     }
 
-    .buttons button {
-      padding: 7px 13px;
+    .buttons a {
+      padding: 7px 3px;
     }
 
     .buttons a {
@@ -911,12 +909,8 @@
       top: 10px;
     }
     
-    .buttons button {
-      padding: 7px 24px;
-    }
-    
     .buttons a {
-      padding: 0px 14px;
+      padding: 7px 24px;
     }
     
     .buttons img {
@@ -933,12 +927,8 @@
       top: 10px;
     }
 
-    .buttons button {
-      padding: 9px 33px;
-    }
-
     .buttons a {
-       padding: px 14px;
+      padding: 9px 33px;
     }
 
     .buttons img {

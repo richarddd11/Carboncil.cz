@@ -29,9 +29,14 @@ const HeroMobile = () => {
 
         {/* Tlačidlá vo vyrezanom otvore obrázka */}
         <div className="buttons absolute top-2 left-0 flex items-center p-1">
-          <button onClick={() => navigate('/uhlie')} className="bg-black text-white px-6 py-2 rounded-full flex items-center gap-2 transform transition-transform duration-200 hover:scale-105 cursor-pointer">
-            {t('product_detail')} <img src="Arrow.png" alt="" className="w-4 h-4" />
-          </button>
+        <a
+  href="https://www.chutespanelska.cz/grilovaci-uhli/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-black text-white px-6 py-2 rounded-full flex items-center gap-2 transform transition-transform duration-200 hover:scale-105 cursor-pointer"
+>
+  {t('product_detail')} <img src="Arrow.png" alt="" className="w-4 h-4" />
+</a>
           <Link to="/kontakt" className="underline px-6 py-3 rounded-full hover:text-[#A40C0B] transition">
             {t('nav_contact')}
           </Link>
@@ -39,7 +44,13 @@ const HeroMobile = () => {
 
         {/* Čierna šípka */}
         <div className="absolute bottom-0 right-0 h-2/12 w-95/550 bg-black text-white text-xl p-3 rounded-xl shadow-md flex items-center justify-center">
-          <Link to="/uhlie"><img src="Arrow1.png" alt="Arrow" className='w-16' /></Link>
+        <a
+    href="https://www.chutespanelska.cz/grilovaci-uhli/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src="Arrow1.png" alt="Arrow" className="w-16" />
+  </a>
         </div>
       </div>
 

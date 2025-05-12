@@ -44,12 +44,15 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
                   </p>
                 </div>
                 {showDetailButton && (
-                  <button onClick={() => navigate('/uhlie')}
-                    className="absolute bottom-0 right-0 text-white bg-[#A40C0B] w-[12%] h-[9%] rounded-lg flex items-center justify-center transform transition-transform duration-200 hover:scale-125"
-                    aria-label="Product detail"
-                  >
-                    <img src="Arrow1.png" alt="Arrow" className="w-10" />
-                  </button>
+                  <a
+                  href="https://www.chutespanelska.cz/grilovaci-uhli/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute bottom-0 right-0 text-white bg-[#A40C0B] w-[12%] h-[9%] rounded-lg flex items-center justify-center transform transition-transform duration-200 hover:scale-125"
+                  aria-label="Product detail"
+                >
+                  <img src="Arrow1.png" alt="Arrow" className="w-10" />
+                </a>
                 )}
               </div>
             </div>
@@ -74,12 +77,15 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
                   </p>
                 </div>
                 {showDetailButton && (
-                  <button onClick={() => navigate('/uhlie')}
-                    className="absolute bottom-0 right-0 text-white bg-[#A40C0B] w-[12%] h-[9%] rounded-lg flex items-center justify-center transform transition-transform duration-200 hover:scale-125"
-                    aria-label="Product detail"
-                  >
-                    <img src="Arrow1.png" alt="Arrow" className="w-10" />
-                  </button>
+                  <a
+                  href="https://www.chutespanelska.cz/grilovaci-uhli/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute bottom-0 right-0 text-white bg-[#A40C0B] w-[12%] h-[9%] rounded-lg flex items-center justify-center transform transition-transform duration-200 hover:scale-125"
+                  aria-label="Product detail"
+                >
+                  <img src="Arrow1.png" alt="Arrow" className="w-10" />
+                </a>
                 )}
               </div>
             </div>
