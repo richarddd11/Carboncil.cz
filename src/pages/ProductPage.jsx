@@ -11,7 +11,7 @@ const ProductPage = () => {
   return (
     <div className='mt-25 productPage'>
       
-     <ProductSection showDetailButton={false} showHeading={false} />
+      <ProductSection showDetailButton={true} showHeading={false} useLinks={true} />
      <CharcoalInfoSection />
      <Coal />
      <BiolihSection />

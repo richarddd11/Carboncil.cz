@@ -1,10 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 
-const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
-  const navigate = useNavigate();
-  const { t } = useTranslation();
+const ProductSection = ({ showDetailButton = true, showHeading = true, useLinks = false }) => {
+  const navigate = useNavigate()
 
   return (
     <section className="productSection bg-black text-white py-10 mx-6 rounded-4xl px-6">
@@ -13,10 +11,10 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
         {showHeading && (
           <div className="text-center mb-6">
             <h2 className="text-4xl md:text-5xl text-[#A40C0B] font-bold mb-2">
-              {t('product_heading')}
+              Objevte rozdíl
             </h2>
             <h3 className="text-white productHead text-4xl md:text-5xl font-medium">
-              {t('product_1_heading')}
+              Tady začíná vaše čisté grilování.
             </h3>
           </div>
         )}
@@ -26,11 +24,13 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
 
             {/* První produkt */}
             <div className="relative w-full product">
+              {/* obrázek ve flow dává rodiči správnou výšku */}
               <img
                 src="ProductBg.png"
-                alt="Product background"
+                alt="pozadie produktu"
                 className="w-full h-auto object-cover rounded-lg"
               />
+              {/* overlay s obsahem */}
               <div className="absolute inset-0 flex flex-col justify-between p-6">
                 <div>
                   <img
@@ -38,21 +38,31 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
                     alt="Carboncil 1,5kg"
                     className="w-90 mb-4 rounded-xl mx-auto object-contain"
                   />
-                  <h3 className="text-[28px] product-h3 font-bold mb-2">{t('product_1_name')}</h3>
+                  <h3 className="text-[28px] product-h3 font-bold mb-2">Carboncil 1,5kg</h3>
                   <p className="text-base product-text text-[#696969] mb-4">
-                    {t('product_1_desc')}
+                    Kompaktní balení ekologického uhlí vhodné pro menší grilování nebo jako vzorek pro ty, kteří chtějí Carboncil poprvé vyzkoušet.
                   </p>
                 </div>
                 {showDetailButton && (
-                  <a
-                  href="https://www.chutespanelska.cz/grilovaci-uhli/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="absolute bottom-0 right-0 text-white bg-[#A40C0B] w-[12%] h-[9%] rounded-lg flex items-center justify-center transform transition-transform duration-200 hover:scale-125"
-                  aria-label="Product detail"
-                >
-                  <img src="Arrow1.png" alt="Arrow" className="w-10" />
-                </a>
+                  useLinks ? (
+                    <a
+                      href="https://www.chutespanelska.cz/grilovaci-uhli/"
+                      target="_blank"
+  rel="noopener noreferrer"
+                      className="absolute bottom-0 right-0 text-white bg-[#A40C0B] w-[12%] h-[9%] rounded-lg flex items-center justify-center transform transition-transform duration-200 hover:scale-125"
+                      aria-label="Detail produktu"
+                    >
+                      <img src="Arrow1.png" alt="Arrow" className="w-10" />
+                    </a>
+                  ) : (
+                    <button
+                      onClick={() => navigate('/uhlie')}
+                      className="absolute bottom-0 right-0 text-white bg-[#A40C0B] w-[12%] h-[9%] rounded-lg flex items-center justify-center transform transition-transform duration-200 hover:scale-125"
+                      aria-label="Detail produktu"
+                    >
+                      <img src="Arrow1.png" alt="Arrow" className="w-10" />
+                    </button>
+                  )
                 )}
               </div>
             </div>
@@ -61,7 +71,7 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
             <div className="relative w-full product">
               <img
                 src="ProductBg.png"
-                alt="Product background"
+                alt="pozadie produktu"
                 className="w-full h-auto object-cover rounded-lg"
               />
               <div className="absolute inset-0 flex flex-col justify-between p-6">
@@ -71,21 +81,31 @@ const ProductSection = ({ showDetailButton = true, showHeading = true }) => {
                     alt="Top Quality 10kg"
                     className="w-90 mb-4 rounded-xl mx-auto object-contain"
                   />
-                  <h3 className="text-[28px] font-bold product-h3 mb-2">{t('product_3_name')}</h3>
+                  <h3 className="text-[28px] font-bold product-h3 mb-2">Top Quality 15kg</h3>
                   <p className="text-base product-text text-[#696969] mb-4">
-                    {t('product_3_desc')}
+                    Velké ekonomické balení vysoce výhřevného uhlí z Venezuely pro pravidelné grilování bez kouře, zápachu a nečistot.
                   </p>
                 </div>
                 {showDetailButton && (
-                  <a
-                  href="https://www.chutespanelska.cz/grilovaci-uhli/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="absolute bottom-0 right-0 text-white bg-[#A40C0B] w-[12%] h-[9%] rounded-lg flex items-center justify-center transform transition-transform duration-200 hover:scale-125"
-                  aria-label="Product detail"
-                >
-                  <img src="Arrow1.png" alt="Arrow" className="w-10" />
-                </a>
+                  useLinks ? (
+                    <a
+                      href="https://www.chutespanelska.cz/grilovaci-uhli/"
+                      target="_blank"
+  rel="noopener noreferrer"
+                      className="absolute bottom-0 right-0 text-white bg-[#A40C0B] w-[12%] h-[9%] rounded-lg flex items-center justify-center transform transition-transform duration-200 hover:scale-125"
+                      aria-label="Detail produktu"
+                    >
+                      <img src="Arrow1.png" alt="Arrow" className="w-10" />
+                    </a>
+                  ) : (
+                    <button
+                      onClick={() => navigate('/uhlie')}
+                      className="absolute bottom-0 right-0 text-white bg-[#A40C0B] w-[12%] h-[9%] rounded-lg flex items-center justify-center transform transition-transform duration-200 hover:scale-125"
+                      aria-label="Detail produktu"
+                    >
+                      <img src="Arrow1.png" alt="Arrow" className="w-10" />
+                    </button>
+                  )
                 )}
               </div>
             </div>
