@@ -64,6 +64,15 @@ const NavBar = () => {
           <NavLink to="/uhlie" className={linkClass}>
             {t('nav_products')}
           </NavLink>
+          <a
+  href="https://www.chutespanelska.cz/grilovaci-uhli/"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => setIsOpen(false)}
+  className="text-base font-medium text-black transition hover:text-[#A40C0B]"
+>
+  E-shop
+</a>
         </nav>
 
         <div className="flex items-center gap-6 relative">
@@ -136,6 +145,14 @@ const NavBar = () => {
           <NavLink to="/uhlie" onClick={() => setIsOpen(false)} className={linkClass}>
             {t('nav_products')}
           </NavLink>
+          <a
+  href="https://www.chutespanelska.cz/grilovaci-uhli/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-base font-medium text-black transition hover:text-[#A40C0B]"
+>
+  E-shop
+</a>
         </nav>
       </div>
     </div>
