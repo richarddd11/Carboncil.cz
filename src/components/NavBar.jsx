@@ -51,7 +51,7 @@ const NavBar = () => {
     <div className="fixed top-0 bg-white z-50 w-full">
       <div className="nav shadow-md w-full max-w-8xl mx-auto flex items-center justify-between px-6 py-6">
         <NavLink to="/" className="flex-shrink-0">
-          <img src="Logo.png" alt="Carboncil" className="h-10" />
+          <img src="Logo.png" alt="Carboncil" className="h-7" />
         </NavLink>
 
         <nav className="hidden min-[799px]:flex gap-10">

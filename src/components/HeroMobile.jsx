@@ -33,14 +33,15 @@ const HeroMobile = () => {
   href="https://www.chutespanelska.cz/grilovaci-uhli/"
   target="_blank"
   rel="noopener noreferrer"
-  className="bg-black text-white px-6 py-2 rounded-full flex items-center gap-2 transform transition-transform duration-200 hover:scale-105 cursor-pointer"
+  className="inline-flex items-center  bg-black text-white rounded-full h-8 text-sm leading-none hover:scale-105 transition-transform duration-200 cursor-pointer"
 >
-  {t('product_detail')} <img src="Arrow.png" alt="" className="w-4 h-4" />
+  {t('product_detail')}
+  <img src="Arrow.png" alt="" className="w-4 h-4 inline-block" />
 </a>
-          <Link to="/kontakt" className="underline px-6 py-3 rounded-full hover:text-[#A40C0B] transition">
-            {t('nav_contact')}
-          </Link>
-        </div>
+  <Link to="/kontakt" className="underline  py-3 rounded-full hover:text-[#A40C0B] transition">
+    {t('nav_contact')}
+  </Link>
+</div>
 
         {/* Čierna šípka */}
         <div className="absolute bottom-0 right-0 h-2/12 w-95/550 bg-black text-white text-xl p-3 rounded-xl shadow-md flex items-center justify-center">
