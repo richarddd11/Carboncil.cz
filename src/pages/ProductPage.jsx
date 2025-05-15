@@ -6,6 +6,7 @@ import BiolihSection from '../components/BiolihSection'
 import CharcoalVariantsSection from '../components/CharcoalVariantsSection'
 import FaqSection from '../components/FaqSection';
 import Coal from '../components/Coal'
+import CarboncilUsage from '../components/CarboncilUsage'
 
 const ProductPage = () => {
   return (
@@ -13,6 +14,7 @@ const ProductPage = () => {
       
       <ProductSection showDetailButton={true} showHeading={false} useLinks={true} />
      <CharcoalInfoSection />
+     <CarboncilUsage />
      <Coal />
      <BiolihSection />
      <CharcoalVariantsSection />

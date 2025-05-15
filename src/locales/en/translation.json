@@ -100,5 +100,16 @@
   "footer_nav_home": "Home",
   "footer_nav_about": "About us",
   "footer_nav_products": "Charcoal",
-  "footer_nav_contact": "Contact"
+  "footer_nav_contact": "Contact",
+    "carboncil_usage.title": "How to properly use Carboncil",
+    "image_alt": "Glowing charcoal",
+    "carboncil_usage.storage_title": "Storage and handling:",
+    "carboncil_usage.storage_text": "Store Carboncil in its original bag in a cool, dry place, away from direct sunlight and moisture.",
+    "carboncil_usage.use_title": "Use immediately after opening:",
+    "carboncil_usage.use_text": "After opening the bag, spread the charcoal in the grill and ignite it without delay to avoid losing its ignition properties. The charcoal should be used as soon as possible after opening, as it will start to lose its quick-light capability.",
+    "carboncil_usage.closed_grill_title": "Preparation in closed grills (e.g. ceramic kamado):",
+    "carboncil_usage.closed_grill_text": "Keep the lid open for the first 10 minutes until the charcoal is evenly ignited, then close the grill.",
+    "carboncil_usage.safety_title": "Safety and hygiene:",
+    "carboncil_usage.safety_text": "When handling burning charcoal, use gloves and tools. After grilling, extinguish the ashes thoroughly."
+
 }

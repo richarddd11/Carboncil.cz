@@ -100,5 +100,15 @@
   "footer_nav_home": "Hogar",
   "footer_nav_about": "Sobre nosotros",
   "footer_nav_products": "Carbón",
-  "footer_nav_contact": "Contacto"
+  "footer_nav_contact": "Contacto",
+  "carboncil_usage.title": "Cómo usar correctamente Carboncil",
+  "image_alt": "Carbón al rojo vivo",
+  "carboncil_usage.storage_title": "Almacenamiento y manipulación:",
+  "carboncil_usage.storage_text": "Guarde Carboncil en su bolsa original en un lugar seco y fresco, alejado de la luz solar directa y la humedad.",
+  "carboncil_usage.use_title": "Uso inmediato después de abrir:",
+  "carboncil_usage.use_text": "Después de abrir la bolsa, distribuya el carbón en la parrilla y enciéndalo sin demora para evitar la pérdida de sus propiedades de ignición. El carbón debe usarse lo antes posible después de abrirlo, ya que empieza a perder su capacidad de encendido rápido.",
+  "carboncil_usage.closed_grill_title": "Preparación en parrillas cerradas (por ejemplo, kamado cerámico):",
+  "carboncil_usage.closed_grill_text": "Deje la tapa abierta durante los primeros 10 minutos hasta que el carbón esté encendido uniformemente, luego cierre la parrilla.",
+  "carboncil_usage.safety_title": "Seguridad e higiene:",
+  "carboncil_usage.safety_text": "Utilice guantes y herramientas al manipular carbón encendido. Después de asar, apague completamente las cenizas."
 }

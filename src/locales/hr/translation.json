@@ -100,5 +100,15 @@
   "footer_nav_home": "Dom",
   "footer_nav_about": "O nama",
   "footer_nav_products": "Drveni ugljen",
-  "footer_nav_contact": "Kontakt"
+  "footer_nav_contact": "Kontakt",
+  "carboncil_usage.title": "Kako pravilno koristiti Carboncil",
+  "image_alt": "Užarena drvenjača",
+  "carboncil_usage.storage_title": "Skladištenje i rukovanje:",
+  "carboncil_usage.storage_text": "Čuvajte Carboncil u originalnoj vrećici na suhom i hladnom mjestu, dalje od izravne sunčeve svjetlosti i vlage.",
+  "carboncil_usage.use_title": "Potrošnja odmah nakon otvaranja:",
+  "carboncil_usage.use_text": "Nakon otvaranja vrećice, rasporedite ugljen u roštilju i odmah ga zapalite kako biste spriječili gubitak svojstava samozapaljenja. Ugljen treba iskoristiti što prije nakon otvaranja jer počinje gubiti svoju sposobnost brzog paljenja.",
+  "carboncil_usage.closed_grill_title": "Priprema u zatvorenim roštiljima (npr. keramički kamado):",
+  "carboncil_usage.closed_grill_text": "Ostavite poklopac otvoren prvih 10 minuta dok se ugljen ravnomjerno ne užari, a zatim zatvorite roštilj.",
+  "carboncil_usage.safety_title": "Sigurnost i higijena:",
+  "carboncil_usage.safety_text": "Prilikom rukovanja zapaljenim ugljenom koristite rukavice i alate, a nakon roštiljanja pažljivo ugasite pepeo."
 }
