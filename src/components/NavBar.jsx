@@ -13,15 +13,14 @@ const languages = [
   { code: 'hr', flag: 'hr' }
 ];
 
-// Mapovanie jazyka na doménu
-const languageToDomain = {
-  cs: 'carboncil.cz',
-  sk: 'carboncil.sk',
-  es: 'carboncil.es',
-  en: 'carboncil.co.uk',
-  de: 'carboncil.de',
-  pl: 'carboncil.pl',
-  hr: 'carboncil.hr',
+const domainMap = {
+  cs: 'https://www.carboncil.cz',
+  sk: 'https://www.carboncil.sk',
+  es: 'https://www.carboncil.es',
+  de: 'https://www.carboncil.de',
+  en: 'https://www.carboncil.com',
+  pl: 'https://www.carboncil.pl',
+  hr: 'https://www.carboncil.hr',
 };
 
 const NavBar = () => {
@@ -31,20 +30,15 @@ const NavBar = () => {
   const dropdownRef = useRef(null);
 
   const linkClass = ({ isActive }) =>
-    `text-base font-medium transition ${
-      isActive ? 'text-[#A40C0B]' : 'text-black'
-    }`;
+    `text-base font-medium transition ${isActive ? 'text-[#A40C0B]' : 'text-black'}`;
 
   const contactClass = ({ isActive }) =>
     `text-base font-medium px-6 py-2 rounded-full transition flex items-center justify-center ${
-      isActive
-        ? 'bg-[#A40C0B] text-white'
-        : 'bg-black text-white hover:bg-[#A40C0B]'
+      isActive ? 'bg-[#A40C0B] text-white' : 'bg-black text-white hover:bg-[#A40C0B]'
     }`;
 
   const currentLanguage =
-    languages.find((lang) => lang.code === i18n.language) ||
-    languages.find((lang) => lang.code === 'cs');
+    languages.find((lang) => lang.code === i18n.language) || languages.find((lang) => lang.code === 'cs');
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -80,7 +74,6 @@ const NavBar = () => {
               href="https://www.chutespanelska.cz/grilovaci-uhli/"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => setIsOpen(false)}
               className="text-base font-medium text-black transition hover:text-[#A40C0B]"
             >
               E-shop
@@ -113,19 +106,11 @@ const NavBar = () => {
                   <button
                     key={code}
                     onClick={() => {
-                      i18n.changeLanguage(code).then(() => {
-                        setDropdownOpen(false);
-                        setIsOpen(false);
-
-                        const newDomain = languageToDomain[code];
-                        const currentPath = window.location.pathname + window.location.search;
-
-                        if (newDomain && window.location.hostname !== newDomain) {
-                          window.location.href = `https://${newDomain}${currentPath}`;
-                        } else {
-                          window.location.reload();
-                        }
-                      });
+                      localStorage.removeItem('i18nextLng');
+                      const domain = domainMap[code];
+                      if (domain) {
+                        window.location.href = domain;
+                      }
                     }}
                     className={`w-full px-2 py-2 hover:bg-gray-100 flex items-center ${
                       i18n.language === code ? 'bg-gray-200' : ''
@@ -170,8 +155,8 @@ const NavBar = () => {
               href="https://www.chutespanelska.cz/grilovaci-uhli/"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => setIsOpen(false)}
               className="text-base font-medium text-black transition hover:text-[#A40C0B]"
+              onClick={() => setIsOpen(false)}
             >
               E-shop
             </a>
