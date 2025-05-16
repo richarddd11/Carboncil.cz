@@ -13,6 +13,17 @@ const languages = [
   { code: 'hr', flag: 'hr' }
 ];
 
+// Mapovanie jazyka na doménu
+const languageToDomain = {
+  cs: 'carboncil.cz',
+  sk: 'carboncil.sk',
+  es: 'carboncil.es',
+  en: 'carboncil.co.uk',
+  de: 'carboncil.de',
+  pl: 'carboncil.pl',
+  hr: 'carboncil.hr',
+};
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -64,17 +75,17 @@ const NavBar = () => {
           <NavLink to="/uhlie" className={linkClass}>
             {t('nav_products')}
           </NavLink>
-          {i18n.language === 'cs' || i18n.language === 'sk' ? (
-    <a
-      href="https://www.chutespanelska.cz/grilovaci-uhli/"
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={() => setIsOpen(false)}
-      className="text-base font-medium text-black transition hover:text-[#A40C0B]"
-    >
-      E-shop
-    </a>
-  ) : null}
+          {(i18n.language === 'cs' || i18n.language === 'sk') && (
+            <a
+              href="https://www.chutespanelska.cz/grilovaci-uhli/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)}
+              className="text-base font-medium text-black transition hover:text-[#A40C0B]"
+            >
+              E-shop
+            </a>
+          )}
         </nav>
 
         <div className="flex items-center gap-6 relative">
@@ -102,11 +113,18 @@ const NavBar = () => {
                   <button
                     key={code}
                     onClick={() => {
-                      console.log('Changing to:', code);
                       i18n.changeLanguage(code).then(() => {
                         setDropdownOpen(false);
                         setIsOpen(false);
-                        setTimeout(() => window.location.reload(), 100);
+
+                        const newDomain = languageToDomain[code];
+                        const currentPath = window.location.pathname + window.location.search;
+
+                        if (newDomain && window.location.hostname !== newDomain) {
+                          window.location.href = `https://${newDomain}${currentPath}`;
+                        } else {
+                          window.location.reload();
+                        }
                       });
                     }}
                     className={`w-full px-2 py-2 hover:bg-gray-100 flex items-center ${
@@ -147,17 +165,17 @@ const NavBar = () => {
           <NavLink to="/uhlie" onClick={() => setIsOpen(false)} className={linkClass}>
             {t('nav_products')}
           </NavLink>
-          {i18n.language === 'cs' || i18n.language === 'sk' ? (
-    <a
-      href="https://www.chutespanelska.cz/grilovaci-uhli/"
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={() => setIsOpen(false)}
-      className="text-base font-medium text-black transition hover:text-[#A40C0B]"
-    >
-      E-shop
-    </a>
-  ) : null}
+          {(i18n.language === 'cs' || i18n.language === 'sk') && (
+            <a
+              href="https://www.chutespanelska.cz/grilovaci-uhli/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)}
+              className="text-base font-medium text-black transition hover:text-[#A40C0B]"
+            >
+              E-shop
+            </a>
+          )}
         </nav>
       </div>
     </div>
