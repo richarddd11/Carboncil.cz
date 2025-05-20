@@ -33,8 +33,8 @@ const hostLanguageMap = {
   'www.carboncil.pl': 'pl',
   'carboncil.hr': 'hr',
   'www.carboncil.hr': 'hr',
-  'carboncil.com': 'en',
-  'www.carboncil.com': 'en',
+  'carboncil.co.uk': 'en',
+  'www.carboncil.co.uk': 'en',
 };
 
 const currentHost = window.location.hostname;

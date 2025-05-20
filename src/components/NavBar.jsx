@@ -18,7 +18,7 @@ const domainMap = {
   sk: 'https://www.carboncil.sk',
   es: 'https://www.carboncil.es',
   de: 'https://www.carboncil.de',
-  en: 'https://www.carboncil.com',
+  en: 'https://www.carboncil.co.uk',
   pl: 'https://www.carboncil.pl',
   hr: 'https://www.carboncil.hr',
 };
