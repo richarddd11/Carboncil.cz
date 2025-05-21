@@ -20,7 +20,6 @@ const ProtectedApp = () => (
       <Route path="/kontakt" element={<ContactPage />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
-    <CookieConsent />
   </>
 );
 
