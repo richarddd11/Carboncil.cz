@@ -22,8 +22,7 @@ const CookieConsent = () => {
   return (
     <div className="fixed bottom-0 w-full bg-black text-white px-6 py-4 z-50 flex flex-col md:flex-row items-center justify-between shadow-lg">
       <p className="mb-2 md:mb-0 text-sm">
-        {t('cookie.message')}{' '}
-        <a href="/cookies" className="underline hover:text-gray-300">{t('cookie.more_info')}</a>.
+        {t('cookie.message')}
       </p>
       <div className="flex gap-2">
         <button
